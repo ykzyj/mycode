@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+	        android:id="@+id/topbar_file_tf_show"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@drawable/login_bg"
+	        yk:titletext="文件传输信息"
+	        yk:titletextcolor="#ffffff"
+	        yk:titletextsize="18sp"
+	        yk:lefttext="返回"
+	        yk:lefttextcolor="#ffffff"
+	        yk:lefttextsize="12sp"
+	        yk:leftbackground="@drawable/top_left_button"
+	         yk:righttext="提交"
+	        yk:rightcolor="#ffffff"
+	        yk:rightsize="12sp"
+	        yk:rightbackground="@drawable/top_right_button"
+	        />
+    
+    	<ScrollView 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:scrollbars="vertical"
+		    android:layout_below="@+id/topbar_file_tf_show"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    >
+    
+    		<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="#ffffff"
+			    android:orientation="vertical"
+			    android:focusable="true"   
+			    android:focusableInTouchMode="true"  
+			    >
+			    
+    		    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+		            android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="发件人:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_sender"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:focusable="false"
+			            android:enabled="false"
+			            android:textSize="16sp"
+			            />
+			    </LinearLayout>
+			    
+    		    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+		            android:layout_marginRight="10dp"
+		            android:layout_marginTop="3dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="发件时间:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_sendTime"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:textSize="16sp"
+			            android:focusable="false"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+		            android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:layout_marginTop="3dp"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="收件人:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_receiver"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:textSize="16sp"
+			            android:focusable="false"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			     <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+		            android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:layout_marginTop="3dp"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="收件时间:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_receiveTime"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:textSize="16sp"
+			            android:focusable="false"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+		            android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:layout_marginTop="3dp"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="主题:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+		            <EditText
+			            android:id="@+id/et_title"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:textSize="16sp"
+			            android:enabled="false"
+			            />
+		            
+			    </LinearLayout>
+			    
+   			    <!-- <RelativeLayout
+   			        android:id="@+id/rel_annexName"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="2dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_sc_hiddenCondition"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="附件:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <EditText
+				         android:id="@+id/et_annexName"
+				         android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:gravity="left|top"
+				         android:inputType="textMultiLine"
+						 android:minLines="5"
+						 android:textSize="15sp" 
+						 android:layout_below="@+id/tv_sc_hiddenCondition"
+						 android:focusable="false"
+						 android:enabled="false"
+				         />
+			    </RelativeLayout> -->
+			    
+   			    <com.sunnyit.common.view.CustomInputView 
+   			       android:id="@+id/civ_annexName"
+			       android:layout_width="match_parent"
+			       android:layout_height="wrap_content"
+			       android:layout_marginLeft="10dp"
+		           android:layout_marginRight="10dp"
+		           android:layout_marginTop="3dp"
+			       yk:input_title="附件："
+			       yk:input_fimg_src="@drawable/file_dw_48"
+			       yk:input_simg_src="@drawable/file_open_48"
+			       />
+			    
+   			    <RelativeLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="10dp"
+		            android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:layout_marginTop="3dp"
+			        android:orientation="horizontal"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_sc_hiddenConditionewewq"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="正文:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <WebView 
+			            android:id="@+id/wv_content"
+			            android:layout_width="match_parent"
+				        android:layout_height="match_parent"
+				        android:layout_below="@+id/tv_sc_hiddenConditionewewq"
+						android:enabled="false"
+						android:layout_marginLeft="5dp"
+						android:layout_marginRight="5dp"
+						android:layout_marginBottom="5dp"
+			            />
+			    </RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+        
+</RelativeLayout>

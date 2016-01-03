@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 
+	    android:gravity="center"
+	    >
+	    
+	    <Button
+	        android:id="@+id/but_daily_allcheck" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="日常隐患检查"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_green"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_stand_allcheck" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="对照标准检查"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_green"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_special_allcheck" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="专项检查"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_green"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_daily_check" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="日常隐患复查"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_stand_check" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="对照标准复查"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_special_check" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="专项检查复查"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	</LinearLayout>
+	
+	<com.sunnyit.common.view.CustomFAB
+	    android:id="@+id/en_check_search"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/system_help"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        yk:bg_color="@color/light_blue"
+        android:tint="@android:color/white"
+     />
+	
+</RelativeLayout>

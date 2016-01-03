@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/radio_checked_grey32"  
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical" 
+    >
+
+    <TextView 
+        android:id="@+id/tv_redio_tableName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16.0sp"     
+        android:layout_centerInParent="true"
+        android:textColor="#FF7D899D"
+        android:text="cc"
+        />
+        
+</RelativeLayout>

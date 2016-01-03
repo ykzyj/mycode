@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    >
+    
+    <LinearLayout 
+        android:id="@+id/lay_preloading"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/login_bg"
+        >
+        
+        <!-- android:background="@drawable/rel_foot_bg" -->
+        
+        <TextView 
+           android:id="@+id/tv_preload"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="点击加载更多"
+           android:textColor="#ffffff"
+           android:textSize="16sp"
+           />
+        
+        <LinearLayout 
+	        android:id="@+id/lay_loading"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="center"
+	        android:visibility="gone"
+	        >
+	        
+	        <ProgressBar 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            style="?android:attr/progressBarStyleSmallInverse"
+	            android:layout_margin="5dp"
+	            />
+	        
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:gravity="center"
+	            >
+	            
+	            <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="正在加载中……"
+		            android:textColor="#ffffff"
+           			android:textSize="18sp"
+		            />
+	            
+	             <!-- <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="点击取消"
+		            android:textColor="#6f6c6b"
+		            android:textSize="14sp"
+		            /> -->
+	            
+	        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

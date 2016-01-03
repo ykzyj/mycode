@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" 
+    >
+    
+    <com.sunnyit.common.view.TopBarView 
+        android:id="@+id/topbar_hidden_check"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/login_bg"
+        yk:titletext="数据同步"
+        yk:titletextcolor="#ffffff"
+        yk:titletextsize="18sp"
+        yk:lefttext="返回"
+        yk:lefttextcolor="#ffffff"
+        yk:lefttextsize="12sp"
+        yk:leftbackground="@drawable/top_left_button"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        
+        <Button 
+            android:id="@+id/but_allinfo_downup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/but_info_downup"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="一键数据同步"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+        
+        <Button 
+            android:id="@+id/but_allinfo_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/but_info_down"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="一键数据下载"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+        
+        <Button 
+            android:id="@+id/but_allinfo_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/but_info_up"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="一键信息上传"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+        
+    </LinearLayout>
+    
+    <include layout="@layout/common_tab"/>
+
+</LinearLayout>

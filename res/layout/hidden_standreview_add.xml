@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+	        android:id="@+id/topbar_standcheck_review_add"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@drawable/login_bg"
+	        yk:titletext="对照标准检查复查信息添加"
+	        yk:titletextcolor="#ffffff"
+	        yk:titletextsize="18sp"
+	        yk:lefttext="返回"
+	        yk:lefttextcolor="#ffffff"
+	        yk:lefttextsize="12sp"
+	        yk:leftbackground="@drawable/top_left_button"
+	        yk:righttext="提交"
+	        yk:rightcolor="#ffffff"
+	        yk:rightsize="12sp"
+	        yk:rightbackground="@drawable/top_right_button"
+	        />
+    
+
+     <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="#ffffff"
+		    android:orientation="vertical"
+		    android:focusable="true"   
+		    android:focusableInTouchMode="true"  
+		    android:layout_below="@+id/topbar_standcheck_review_add"
+		    android:layout_marginTop="10dp"
+		    >
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@drawable/login_input"
+		        android:orientation="horizontal" 
+		        >
+		
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="复查部门:"
+		            android:textSize="16sp"
+		            android:paddingLeft="10dp" 
+		            android:textColor="@color/light_blue"
+		            />
+		
+		        <EditText
+		            android:id="@+id/et_ck_reviewDept"
+		            android:layout_width="fill_parent"
+		            android:layout_height="40dp"
+		            android:background="#00ffffff"
+		            android:paddingLeft="10dp" 
+		            android:hint="请输入复查部门"
+		            android:textSize="16sp"
+		            />
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@drawable/login_input"
+		        android:orientation="horizontal" 
+		        android:layout_marginTop="3dp"
+		        >
+		
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="复查时间:"
+		            android:textSize="16sp"
+		            android:paddingLeft="10dp" 
+		            android:textColor="@color/light_blue"
+		            />
+		
+		        <com.sunnyit.common.view.DateEditView
+		            android:id="@+id/et_ck_reviewTime"
+		            android:layout_width="fill_parent"
+		            android:layout_height="40dp"
+		            android:background="#00ffffff"
+		            android:paddingLeft="10dp" 
+		            android:hint="请输入复查时间"
+		            android:textSize="16sp"
+		            />
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@drawable/login_input"
+		        android:orientation="horizontal" 
+		        android:layout_marginTop="3dp"
+		        >
+		
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="复查人员:"
+		            android:textSize="16sp"
+		            android:paddingLeft="10dp" 
+		            android:textColor="@color/light_blue"
+		            />
+		
+		        <EditText
+		            android:id="@+id/et_ck_reviewPeople"
+		            android:layout_width="fill_parent"
+		            android:layout_height="40dp"
+		            android:background="#00ffffff"
+		            android:paddingLeft="10dp" 
+		            android:hint="请输入复查人员"
+		            android:textSize="16sp"
+		            />
+		    </LinearLayout>
+		    
+		    <ListView 
+		         android:id="@+id/lv_stand_review"
+		         android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         />
+		
+		</LinearLayout>
+        
+</RelativeLayout>

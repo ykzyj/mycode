@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 
+	    android:gravity="center"
+	    >
+	    
+	    <Button
+	        android:id="@+id/but_law_all" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="全部"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_green"
+	        android:visibility="gone"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_law_regulation" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="法律"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_law_administration" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="行政法规"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_law_department" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="部门规章"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_law_local" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="地方性法规"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_law_document" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="规范性文件"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_law_standard" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="行业标准"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	</LinearLayout>
+	
+	<com.sunnyit.common.view.CustomFAB
+	    android:id="@+id/law_stand_search"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/system_help"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        yk:bg_color="@color/light_blue"
+        android:tint="@android:color/white"
+     	/>
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal" 
+    >
+
+    <RelativeLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp" 
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/white14"
+        >
+
+	     <ImageView
+		    android:id="@+id/img_publishInfo"
+		    android:layout_width="60dp"
+		    android:layout_height="60dp"
+		    android:src="@drawable/lawenforcement160"
+		    />
+		<RelativeLayout 
+		    android:id="@+id/rel_info_left"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@+id/img_publishInfo"
+		    android:layout_marginLeft="5dp"
+		    android:layout_centerVertical="true"
+		    
+		    >
+		    
+		    <TextView
+			    android:id="@+id/f_txt_ck_specialcheckname"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentStart="true"
+			    android:layout_alignParentLeft="true"
+			    android:text="被检查企业:"
+			    android:textSize="14sp"
+			    android:textColor="#9b9b9b"
+			    />
+		    
+		    <TextView
+			    android:id="@+id/txt_ck_companyName"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="陕西山利科技发展有限责任公司"
+			    android:maxLines="1"
+			    android:textColor="@color/light_blue"
+			    android:textSize="14sp"
+			    android:layout_toRightOf="@+id/f_txt_ck_specialcheckname"
+			    />
+		    
+		    <TextView
+			    android:id="@+id/f_txt_ck_checkeddepartment"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentStart="true"
+			    android:layout_alignParentLeft="true"
+			    android:text="检查时间:"
+			    android:textSize="14sp"
+			    android:textColor="#9b9b9b"
+			    android:layout_marginTop="1dp"
+			    android:layout_below="@+id/f_txt_ck_specialcheckname"
+			    />
+		    
+		     <TextView
+			    android:id="@+id/txt_ck_time"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="1dp"
+			    android:text="2015-09-11"
+			    android:textSize="14sp"
+			    android:maxLines="1"
+			    android:textColor="@color/light_blue"
+			    android:layout_toRightOf="@+id/f_txt_ck_checkeddepartment"
+			    android:layout_below="@+id/f_txt_ck_specialcheckname"
+			    />
+
+		     <TextView
+			    android:id="@+id/f_txt_ck_isExistDanger"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="检查结果:"
+			    android:layout_marginLeft="10dp"
+			    android:textSize="14sp"
+			    android:textColor="#9b9b9b"
+			    android:layout_marginTop="1dp"
+			    android:layout_below="@+id/f_txt_ck_specialcheckname"
+			    android:layout_toRightOf="@+id/txt_ck_time"
+			    />
+		    
+		     <TextView
+			    android:id="@+id/txt_ck_isExistDanger"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="1dp"
+			    android:text="合格"
+			    android:textSize="14sp"
+			    android:maxLines="1"
+			    android:textColor="@color/light_blue"
+			    android:layout_toRightOf="@+id/f_txt_ck_isExistDanger"
+			    android:layout_below="@+id/f_txt_ck_specialcheckname"
+			    />
+		     
+		      <TextView
+			    android:id="@+id/f_txt_ck_deadLine"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentStart="true"
+			    android:layout_alignParentLeft="true"
+			    android:text="整改期限:"
+			    android:textSize="14sp"
+			    android:layout_marginTop="1dp"
+			    android:textColor="#9b9b9b"
+			    android:layout_below="@+id/f_txt_ck_checkeddepartment"
+			    />
+		    
+		     <TextView
+			    android:id="@+id/txt_ck_deadLine"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="2015-10-08"
+			    android:textSize="14sp"
+			    android:maxLines="1"
+			    android:textColor="@color/light_blue"
+			    android:layout_marginTop="1dp"
+			    android:layout_toRightOf="@+id/f_txt_ck_deadLine"
+			    android:layout_below="@+id/f_txt_ck_checkeddepartment"
+			    />
+		     
+		     <TextView
+			    android:id="@+id/f_txt_ck_state"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="检查状态:"
+			    android:textSize="14sp"
+			    android:textColor="#9b9b9b"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginTop="1dp"
+			    android:layout_toRightOf="@+id/txt_ck_deadLine"
+			    android:layout_below="@+id/f_txt_ck_checkeddepartment"
+			    />
+		    
+		     <TextView
+			    android:id="@+id/txt_ck_state"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="整改中"
+			    android:textSize="14sp"
+			    android:textColor="@color/light_blue"
+			    android:maxLines="1"
+			    android:layout_marginTop="1dp"
+			    android:layout_toRightOf="@+id/f_txt_ck_state"
+			    android:layout_below="@+id/f_txt_ck_checkeddepartment"
+			    />
+	    
+	</RelativeLayout>
+    
+	</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/rel_right_bg" >
+
+        <TextView
+            android:id="@+id/item_right_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/del_icon_normal"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

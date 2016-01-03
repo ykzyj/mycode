@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+	        android:id="@+id/topbar_file_tf_send"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@drawable/login_bg"
+	        yk:titletext="文件传输"
+	        yk:titletextcolor="#ffffff"
+	        yk:titletextsize="18sp"
+	        yk:lefttext="返回"
+	        yk:lefttextcolor="#ffffff"
+	        yk:lefttextsize="12sp"
+	        yk:leftbackground="@drawable/top_left_button"
+	         yk:righttext="提交"
+	        yk:rightcolor="#ffffff"
+	        yk:rightsize="12sp"
+	        yk:rightbackground="@drawable/top_right_button"
+	        />
+    
+    	<ScrollView 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:scrollbars="vertical"
+		    android:layout_below="@+id/topbar_file_tf_send"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    >
+    
+    		<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="#ffffff"
+			    android:orientation="vertical"
+			    android:focusable="true"   
+			    android:focusableInTouchMode="true"  
+			    >
+			    
+			    <RelativeLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="2dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_receiver"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="收件人:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <EditText
+				         android:id="@+id/et_receiver"
+				         android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:gravity="left|top"
+				         android:inputType="textMultiLine"
+						 android:minLines="3"
+						 android:textSize="14sp" 
+						 android:layout_below="@+id/tv_receiver"
+						 android:hint="请选择收件人"
+						 android:focusable="false"
+				         />
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="4dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_title"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="主题:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <EditText
+				         android:id="@+id/et_title"
+				         android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:gravity="left|top"
+				         android:inputType="textMultiLine"
+						 android:minLines="3"
+						 android:textSize="14sp" 
+						 android:layout_below="@+id/tv_title"
+						 android:hint="请输入主题"
+				         />
+			    </RelativeLayout>
+			    
+   			    <RelativeLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="4dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_sc_hiddenCondition"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="附件:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <EditText
+				         android:id="@+id/et_annexName"
+				         android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:gravity="left|top"
+				         android:inputType="textMultiLine"
+						 android:minLines="3"
+						 android:textSize="14sp" 
+						 android:layout_below="@+id/tv_sc_hiddenCondition"
+						 android:hint="请选择附件"
+						 android:focusable="false"
+				         />
+			    </RelativeLayout>
+			    
+   			    <RelativeLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="4dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_sc_hiddenConditionewewq"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="正文:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <EditText
+				         android:id="@+id/et_content"
+				         android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:gravity="left|top"
+				         android:inputType="textMultiLine"
+						 android:minLines="12"
+						 android:textSize="14sp" 
+						 android:layout_below="@+id/tv_sc_hiddenConditionewewq"
+						 android:hint="请输入正文"
+				         />
+			    </RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+        
+</RelativeLayout>

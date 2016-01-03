@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  
+        xmlns:android="http://schemas.android.com/apk/res/android"  
+        xmlns:tools="http://schemas.android.com/tools"  
+    	xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"  
+        android:orientation="vertical"  
+        android:background="#ffffff"
+        >  
+  
+       <com.sunnyit.common.progressbar.VerticalNumberProgressBar
+	        android:id="@+id/id_progressbarv"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="match_parent"  
+	        android:layout_gravity="center_horizontal"
+	       	android:padding="20dp"
+	       	android:layout_marginBottom="20dp"
+	        yk:progress_reached_bar_height="10dp"
+	        yk:progress_unreached_bar_height="10dp"
+	        yk:progress_text_color="#26af3d"
+	        yk:progress_reached_color="#26af3d"
+	        yk:progress_unreached_color="#c7c8c8"
+	        yk:progress_text_size="16sp"
+	        />
+  
+</LinearLayout>  

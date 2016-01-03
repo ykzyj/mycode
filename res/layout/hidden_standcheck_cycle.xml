@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+	        android:id="@+id/topbar_standcheck_cycle"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@drawable/login_bg"
+	        yk:titletext="企业对照标准排查"
+	        yk:titletextcolor="#ffffff"
+	        yk:titletextsize="18sp"
+	        yk:lefttext="返回"
+	        yk:lefttextcolor="#ffffff"
+	        yk:lefttextsize="12sp"
+	        yk:leftbackground="@drawable/top_left_button"
+	        yk:righttext="检查"
+	        yk:rightcolor="#ffffff"
+	        yk:rightsize="12sp"
+	        yk:rightbackground="@drawable/top_right_button"
+	        />
+    
+    	<ScrollView 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:scrollbars="vertical"
+		    android:layout_below="@+id/topbar_standcheck_cycle"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    >
+    
+    		<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="#ffffff"
+			    android:orientation="vertical"
+			    android:focusable="true"   
+			    android:focusableInTouchMode="true"  
+			    >
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查编号:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/sc_idd"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入检查编号"
+			            android:textSize="16sp"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查标准:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <com.sunnyit.common.view.ChoiceEditView
+		                 android:id="@+id/sc_hf_name"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入检查标准"
+		                />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查时间:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+		            <com.sunnyit.common.view.DateEditView 
+		                android:id="@+id/sc_checkTime"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入检查时间"
+		                />
+		            
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查部门:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/sc_checkDept"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入检查部门"
+			            android:textSize="16sp"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查人员:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/sc_checkPerson"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入检查人员"
+			            android:textSize="16sp"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="vertical" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查周期:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			
+			        <RadioGroup 
+					    android:id="@+id/ra_sc_circle"  
+		      			android:layout_width="match_parent" 
+		      			android:layout_height="wrap_content"  
+		      			android:layout_marginLeft="10dp"
+		      			android:layout_marginRight="10dp"
+		      			android:layout_marginBottom="5dp"
+		      			android:layout_marginTop="5dp"
+		                >
+		                
+			           <RadioButton     
+			            	android:id="@+id/rb_all_year"    
+			            	android:layout_width="match_parent"    
+				            android:layout_height="40dp"  
+				            android:text="全年"
+				            android:textSize="16.0sp"     
+				            android:gravity="center"   
+				            android:button="@null"  
+				            android:checked="true"
+				            android:textColor="@drawable/radio_btn_color" 
+				            android:background="@drawable/radio_blue_grey"  
+				            />    
+				        <RadioButton     
+				            android:id="@+id/rb_every_year"  
+				            android:layout_width="match_parent"    
+				            android:layout_height="40dp" 
+				            android:layout_marginTop="2dp" 
+				            android:text="每年" 
+				            android:textSize="16.0sp"  
+				            android:gravity="center"  
+				            android:button="@null"  
+				            android:textColor="@drawable/radio_btn_color" 
+				            android:background="@drawable/radio_blue_grey"  
+				            />    
+				        <RadioButton     
+				            android:id="@+id/rb_every_halfyear"  
+				            android:layout_width="match_parent"    
+				            android:layout_height="40dp" 
+				            android:layout_marginTop="2dp" 
+				            android:text="每半年" 
+				            android:textSize="16.0sp"  
+				            android:gravity="center"  
+				            android:button="@null"  
+				            android:textColor="@drawable/radio_btn_color" 
+				            android:background="@drawable/radio_blue_grey"  
+				            />   
+			            <RadioButton     
+			            	android:id="@+id/rb_every_quarter"    
+			            	android:layout_width="match_parent"    
+				            android:layout_height="40dp"  
+				            android:layout_marginTop="2dp"
+				            android:text="每季度"
+				            android:textSize="16.0sp"     
+				            android:gravity="center"   
+				            android:button="@null"  
+				            android:textColor="@drawable/radio_btn_color" 
+				            android:background="@drawable/radio_blue_grey"  
+				            />    
+				        <RadioButton     
+				            android:id="@+id/rb_every_monthly"  
+				            android:layout_width="match_parent"    
+				            android:layout_height="40dp"  
+				            android:layout_marginTop="2dp"
+				            android:text="每月" 
+				            android:textSize="16.0sp"  
+				            android:gravity="center"  
+				            android:button="@null"  
+				            android:textColor="@drawable/radio_btn_color" 
+				            android:background="@drawable/radio_blue_grey"  
+				            />    
+				        <RadioButton     
+				            android:id="@+id/rb_every_week"  
+				            android:layout_width="match_parent"    
+				            android:layout_height="40dp" 
+				            android:layout_marginTop="2dp" 
+				            android:text="每周" 
+				            android:textSize="16.0sp"  
+				            android:gravity="center"  
+				            android:button="@null"  
+				            android:textColor="@drawable/radio_btn_color" 
+				            android:background="@drawable/radio_blue_grey"  
+				            />   
+			            <RadioButton     
+			            	android:id="@+id/rb_other"    
+			            	android:layout_width="match_parent"    
+				            android:layout_height="40dp"
+				            android:layout_marginTop="2dp"  
+				            android:text="其他"
+				            android:textSize="16.0sp"     
+				            android:gravity="center"   
+				            android:button="@null"  
+				            android:textColor="@drawable/radio_btn_color" 
+				            android:background="@drawable/radio_blue_grey"  
+				            />   
+	     			
+	   				</RadioGroup> 
+			    </LinearLayout>
+			    
+			</LinearLayout>
+        
+        </ScrollView>
+        
+</RelativeLayout>

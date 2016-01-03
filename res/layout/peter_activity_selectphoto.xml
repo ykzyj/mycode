@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/peter_selectphoto_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/login_bg" >
+
+        <TextView
+            android:id="@+id/peter_selectphoto_takephoto_btns"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClicktakePhoto"
+            android:text="更多"
+            android:padding="15dp"
+            android:background="@drawable/top_right_button"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/peter_privewphoto_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择图片"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/peter_selectphoto_ok_btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:onClick="onClickOk"
+            android:padding="15dp"
+            android:background="@drawable/top_right_button"
+            android:text="完成"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/peter_selectphoto__gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/peter_selectphoto__bottom_bar"
+        android:layout_below="@+id/peter_selectphoto_top_bar"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:horizontalSpacing="2dp"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:verticalSpacing="2dp" />
+
+    <RelativeLayout
+        android:id="@+id/peter_selectphoto__bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_bg"
+        android:onClick="openpopup" >
+
+        <TextView
+            android:id="@+id/peter_selectphoto_bottom_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="所有图片"
+            android:textColor="#F2F2F2"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/peter_selectphoto_bottom_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="162张"
+            android:textColor="#F2F2F2"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

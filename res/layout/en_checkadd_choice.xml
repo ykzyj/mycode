@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <com.sunnyit.common.view.TopBarView 
+        android:id="@+id/topbar_encheck_add"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/login_bg"
+        yk:titletext="执法检查信息添加"
+        yk:titletextcolor="#ffffff"
+        yk:titletextsize="18sp"
+        yk:lefttext="返回"
+        yk:lefttextcolor="#ffffff"
+        yk:lefttextsize="12sp"
+        yk:leftbackground="@drawable/top_left_button"
+        />
+    
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 
+	    android:gravity="center"
+	    >
+    
+	    <Button
+	        android:id="@+id/but_daily_check" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="日常隐患检查"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_stand_check" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="对照标准排查"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_special_check" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="专项检查"
+	        android:textSize="16sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+    </LinearLayout>
+    
+</LinearLayout>

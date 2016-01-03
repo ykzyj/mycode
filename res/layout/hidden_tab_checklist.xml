@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	
+	   <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="@color/bg_gray"
+	        android:orientation="vertical" 
+	        >
+	        
+	       <com.sunnyit.common.view.TopBarView 
+		        android:id="@+id/topbar_hidden_tab_checklist"
+		        android:layout_width="match_parent"
+		        android:layout_height="48dp"
+		        android:background="@drawable/login_bg"
+		        yk:titletext="企业隐患信息列表"
+		        yk:titletextcolor="#ffffff"
+		        yk:titletextsize="18sp"
+		        yk:lefttext="返回"
+		        yk:lefttextcolor="#ffffff"
+		        yk:lefttextsize="12sp"
+		        yk:leftbackground="@drawable/top_left_button"
+		        yk:righttext="添加"
+		        yk:rightcolor="#ffffff"
+		        yk:rightsize="12sp"
+		        yk:rightbackground="@drawable/top_right_button"
+		        />
+	        
+	                  
+	        <FrameLayout
+	            android:id="@android:id/tabcontent"
+	            android:layout_width="fill_parent"
+	            android:layout_height="0.0dip"
+	            android:layout_weight="1.0" />
+	
+	
+	        <TabWidget
+	            android:id="@android:id/tabs"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.0"
+	            android:visibility="gone" />
+	
+	        <FrameLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <RadioGroup
+	                android:id="@+id/hidden_tab_group"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="bottom"
+	                android:background="@drawable/login_bg"
+	                android:gravity="bottom"
+	                android:orientation="horizontal"
+	                 >
+	                 
+	                <RadioButton
+	                    android:id="@+id/rt_daily_check"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    style="@style/MMTabButton"
+	                    android:layout_weight="1.0"    
+	                    android:text="日常检查" 
+	                    android:checked="true"
+	                    android:textSize="16sp"
+	                    android:gravity="center"
+	                    />
+	
+	                <RadioButton
+	                    android:id="@+id/rt_stand_check"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    style="@style/MMTabButton"
+	                    android:layout_weight="1.0"
+	                    android:text="对照标准排查" 
+	                    android:textSize="16sp"
+	                    android:gravity="center"
+	                    />
+	                
+	            </RadioGroup>
+	        </FrameLayout>
+	    </LinearLayout>
+	</TabHost>

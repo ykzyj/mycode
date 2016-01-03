@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:padding="3dp"
+    android:background="@drawable/rel_item_left"
+    >
+    
+	<ImageView
+	    android:id="@+id/img_publishInfo"
+	    android:layout_width="100dp"
+	    android:layout_height="60dp"
+	    android:src="@drawable/country_law150"
+	    android:visibility="gone"
+	    />
+	<RelativeLayout 
+	    android:id="@+id/rel_info_left"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/img_publishInfo"
+	    android:layout_marginLeft="5dp"
+	    android:layout_centerVertical="true"
+	    
+	    >
+	    
+	    <TextView
+		    android:id="@+id/f_txt_publishInfo_title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentStart="true"
+		    android:layout_alignParentLeft="true"
+		    android:text="标        题:"
+		    android:textSize="14sp"
+		    android:textColor="#9b9b9b"
+		    android:layout_marginTop="2dp"
+		    />
+	    
+	    <TextView
+		    android:id="@+id/txt_publishInfo_title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="进一步加强安全生产 应急救援体系建设的实施意见"
+		    android:maxLines="1"
+		    android:textColor="@color/light_blue"
+		    android:textSize="14sp"
+		    android:layout_toRightOf="@+id/f_txt_publishInfo_title"
+		    android:layout_marginTop="2dp"
+		    />
+	    
+	    <TextView
+		    android:id="@+id/f_txt_publishInfo_keyword"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentStart="true"
+		    android:layout_alignParentLeft="true"
+		    android:text="法律类型:"
+		    android:textSize="14sp"
+		    android:textColor="#9b9b9b"
+		    android:layout_below="@+id/f_txt_publishInfo_title"
+		    android:layout_marginTop="1dp"
+		    />
+	    
+	     <TextView
+		    android:id="@+id/txt_publishInfo_keyword"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="1dp"
+		    android:text="部门法规"
+		    android:textSize="14sp"
+		    android:maxLines="1"
+		    android:textColor="@color/light_blue"
+		    android:layout_toRightOf="@+id/f_txt_publishInfo_keyword"
+		    android:layout_below="@+id/f_txt_publishInfo_title"
+		    android:maxWidth="100dp"
+		    />
+	     
+	     <TextView
+		    android:id="@+id/f_txt_publishInfo_publishTime"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="发布时间:"
+		    android:textSize="14sp"
+		    android:textColor="#9b9b9b"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="1dp"
+		    android:layout_below="@+id/f_txt_publishInfo_title"
+		    android:layout_toRightOf="@+id/txt_publishInfo_keyword"
+		    />
+	    
+	    <TextView
+		    android:id="@+id/txt_publishInfo_publishTime"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="2015-07-15 10:49:46"
+		    android:maxLines="1"
+		    android:textColor="@color/light_blue"
+		    android:textSize="14sp"
+		    android:layout_marginTop="1dp"
+		    android:layout_below="@+id/f_txt_publishInfo_title"
+		    android:layout_toRightOf="@+id/f_txt_publishInfo_publishTime"
+		    android:maxWidth="70dp"
+		    />
+	     
+	     <TextView
+		    android:id="@+id/f_txt_publishInfo_publishDeptName"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="发布部门:"
+		    android:textSize="14sp"
+		    android:textColor="#9b9b9b"
+		    android:layout_marginTop="1dp"
+		    android:layout_below="@+id/txt_publishInfo_publishTime"
+		    />
+	    
+	     <TextView
+		    android:id="@+id/txt_publishInfo_publishDeptName"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="西安市委市政府"
+		    android:textSize="14sp"
+		    android:maxLines="1"
+		    android:textColor="@color/light_blue"
+		    android:layout_marginTop="1dp"
+		    android:layout_toRightOf="@+id/f_txt_publishInfo_publishDeptName"
+		    android:layout_below="@+id/txt_publishInfo_publishTime"
+		    />
+	     
+	     <TextView
+		    android:id="@+id/f_txt_publishInfo_infoType"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="类型:"
+		    android:textSize="14sp"
+		    android:textColor="#9b9b9b"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="1dp"
+		    android:layout_toRightOf="@+id/txt_publishInfo_publishDeptName"
+		    android:layout_below="@+id/txt_publishInfo_publishTime"
+		    />
+	    
+	     <TextView
+		    android:id="@+id/txt_publishInfo_infoType"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="政策法规"
+		    android:textSize="14sp"
+		    android:textColor="@color/light_blue"
+		    android:maxLines="1"
+		    android:layout_marginTop="1dp"
+		    android:layout_toRightOf="@+id/f_txt_publishInfo_infoType"
+		    android:layout_below="@+id/txt_publishInfo_publishTime"
+		    />
+	    
+	</RelativeLayout>
+	
+</RelativeLayout>
+

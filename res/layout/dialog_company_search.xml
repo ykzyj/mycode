@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+   	android:background="#ffffffff"
+    >
+    
+    <TextView
+        android:id="@+id/tv_dg_title"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center"
+        android:text="企业信息搜索"
+        android:background="@drawable/bg_blue14"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"   
+		android:focusableInTouchMode="true"  
+		android:paddingTop="10dp"
+		android:background="@drawable/white14"
+        >
+        
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:background="@drawable/login_input"
+		        android:orientation="horizontal" 
+		        >
+		
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="企业名称:"
+		            android:textSize="16sp"
+		            android:paddingLeft="10dp" 
+		            android:textColor="@color/light_blue"
+		            />
+		
+		        <EditText
+		            android:id="@+id/et_e_companyName"
+		            android:layout_width="fill_parent"
+		            android:layout_height="42dp"
+		            android:background="#00ffffff"
+		            android:paddingLeft="10dp" 
+		            android:textSize="16sp"
+		            android:hint="请输入企业名称"
+		            />
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginTop="3dp"
+			    android:background="@drawable/login_input"
+		        android:orientation="horizontal" 
+		        >
+		
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="企业性质:"
+		            android:textSize="16sp"
+		            android:paddingLeft="10dp" 
+		            android:textColor="@color/light_blue"
+		            />
+		
+		        <com.sunnyit.common.view.ChoiceEditView
+		            android:id="@+id/et_e_companyProperty"
+		            android:layout_width="fill_parent"
+		            android:layout_height="40dp"
+		            android:background="#00ffffff"
+		            android:paddingLeft="10dp" 
+		            android:hint="请输入企业性质"
+		            />
+		    </LinearLayout>
+		    
+		      <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginTop="3dp"
+			    android:background="@drawable/login_input"
+		        android:orientation="horizontal" 
+		        >
+		
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="监管层级:"
+		            android:textSize="16sp"
+		            android:paddingLeft="10dp" 
+		            android:textColor="@color/light_blue"
+		            />
+		
+		        <com.sunnyit.common.view.ChoiceEditView
+		            android:id="@+id/et_e_managerlayer"
+		            android:layout_width="fill_parent"
+		            android:layout_height="40dp"
+		            android:background="#00ffffff"
+		            android:paddingLeft="10dp" 
+		            android:hint="请输入监管层级"
+		               />
+		    </LinearLayout>
+		    
+		     <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginTop="3dp"
+			    android:background="@drawable/login_input"
+		        android:orientation="horizontal" 
+		        >
+		
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="主管部门:"
+		            android:textSize="16sp"
+		            android:paddingLeft="10dp" 
+		            android:textColor="@color/light_blue"
+		            />
+		
+		        <!-- <EditText
+		            android:id="@+id/et_e_departmentName"
+		            android:layout_width="fill_parent"
+		            android:layout_height="40dp"
+		            android:background="#00ffffff"
+		            android:paddingLeft="10dp" 
+		            android:hint="请输入主管部门"
+		            /> -->
+		        
+		        <com.sunnyit.common.view.ChoiceEditView
+		            android:id="@+id/et_e_departmentName"
+		            android:layout_width="fill_parent"
+		            android:layout_height="40dp"
+		            android:background="#00ffffff"
+		            android:paddingLeft="10dp" 
+		            android:hint="请输入主管部门"
+		            />
+		    </LinearLayout>
+		    
+		     <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginTop="3dp"
+			    android:background="@drawable/login_input"
+		        android:orientation="horizontal" 
+		        >
+		
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="所属区域:"
+		            android:textSize="16sp"
+		            android:paddingLeft="10dp" 
+		            android:textColor="@color/light_blue"
+		            />
+		
+		        <!-- <EditText
+		            android:id="@+id/et_e_localName"
+		            android:layout_width="fill_parent"
+		            android:layout_height="40dp"
+		            android:background="#00ffffff"
+		            android:paddingLeft="10dp" 
+		            android:hint="请输入所属区域"
+		            /> -->
+		        
+		        <com.sunnyit.common.view.ChoiceEditView
+		            android:id="@+id/et_e_localName"
+		            android:layout_width="fill_parent"
+		            android:layout_height="40dp"
+		            android:background="#00ffffff"
+		            android:paddingLeft="10dp" 
+		            android:hint="请输入所属区域"
+		            />
+		    </LinearLayout>
+		    
+		     <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginTop="3dp"
+			    android:background="@drawable/login_input"
+		        android:orientation="horizontal" 
+		        >
+		
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="所属行业 :"
+		            android:textSize="16sp"
+		            android:paddingLeft="10dp" 
+		            android:textColor="@color/light_blue"
+		            />
+		
+		        <com.sunnyit.common.view.ChoiceEditView
+		            android:id="@+id/et_e_belongIndustry"
+		            android:layout_width="fill_parent"
+		            android:layout_height="40dp"
+		            android:background="#00ffffff"
+		            android:paddingLeft="10dp" 
+		            android:hint="请输入所属行业"
+		            />
+		    </LinearLayout>
+		    
+		     <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="3dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="生产经营方式 :"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <com.sunnyit.common.view.ChoiceEditView
+			            android:id="@+id/et_e_mangementMethod"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入经营方式"
+			            />
+		    </LinearLayout>
+		    
+		    <RelativeLayout 
+		        android:id="@+id/rel_cb_divider"
+		        android:layout_width="match_parent"  
+		        android:layout_height="1dp"  
+		        android:background="#bababa"
+		        android:layout_marginTop="5dp"
+		        />
+		
+		
+		    <LinearLayout
+		        android:id="@+id/lin_but_search"
+		        android:layout_width="match_parent"
+		        android:layout_height="40dp"
+		        android:gravity="center"
+		        android:orientation="horizontal" 
+		        >
+		
+		        <Button
+		            android:id="@+id/but_dg_cominfo_search"
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:background="@drawable/rel_tree_bg"
+		            android:textColor="#6c6c6c"
+		            android:textSize="18sp"
+		            android:text="确认"
+		            android:layout_weight="1"
+		            />
+		        
+		         <RelativeLayout 
+		            android:id="@+id/rel_but_divider"
+			        android:layout_width="1dp"  
+			        android:layout_height="match_parent"  
+			        android:background="#bababa"
+			        />
+		        
+		        <Button
+		            android:id="@+id/but_dg_cominfo_cancel"
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:background="@drawable/rel_tree_bg"
+		            android:textColor="#6c6c6c"
+		            android:textSize="18sp"
+		            android:text="取消"
+		            android:layout_weight="1"
+		            />
+		    </LinearLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

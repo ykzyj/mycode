@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LeftSlidingMenu">
+        <attr name="menurightPadding" format="dimension"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="swipelistviewstyle">    
+        <attr name="right_width" format="dimension"></attr>  
+    </declare-styleable>
+
+    <declare-styleable name="topbar">
+        <attr name="titletext" format="string"></attr>
+        <attr name="titletextcolor" format="color"></attr>
+        <attr name="titletextsize" format="dimension"></attr>
+        <attr name="lefttext" format="string"></attr>
+        <attr name="lefttextcolor" format="color"></attr>
+        <attr name="lefttextsize" format="dimension"></attr>
+        <attr name="leftbackground" format="reference|color"></attr>
+        <attr name="righttext" format="string"></attr>
+        <attr name="rightcolor" format="color"></attr>
+        <attr name="rightsize" format="dimension"></attr>
+        <attr name="rightbackground" format="reference|color"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="roundwait">
+        <attr name="round_paintsize" format="string"></attr>
+        <attr name="round_paintcolor" format="color"></attr>
+        <attr name="round_radius" format="dimension"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="searchView">
+        <attr name="search_hint" format="string"></attr>
+        <attr name="search_but_text" format="string"></attr>
+        <attr name="search_but_text_color" format="color"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="inputView">
+        <attr name="input_title" format="string"></attr>
+        <attr name="input_fimg_src" format="reference|color"></attr>
+        <attr name="input_simg_src" format="reference|color"></attr>
+        <attr name="input_hint" format="string"></attr>
+    </declare-styleable>
+    
+</resources>

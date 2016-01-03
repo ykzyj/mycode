@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusable="true"   
+    android:focusableInTouchMode="true"  
+    >
+    
+    <!-- <com.sunnyit.common.view.SearchView 
+        android:id="@+id/company_industry_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        /> -->
+        
+   <com.sunnyit.common.view.TopBarView 
+        android:id="@+id/topbar_com_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/login_bg"
+        yk:titletext="添加事件"
+        yk:titletextcolor="#ffffff"
+        yk:titletextsize="18sp"
+        yk:lefttext="返回"
+        yk:lefttextcolor="#ffffff"
+        yk:lefttextsize="12sp"
+        yk:leftbackground="@drawable/top_left_button"
+        yk:righttext="添加"
+        yk:rightcolor="#ffffff"
+        yk:rightsize="12sp"
+        yk:rightbackground="@drawable/top_right_button"
+        />
+   
+   <EditText 
+       android:id="@+id/et_hidden_check"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/topbar_com_name"
+       android:hint="被检查企业名称"
+       android:textSize="14sp"
+       android:layout_marginTop="2dp"
+       />
+    
+    <!-- <ListView
+        android:id="@+id/ListView_hidden_check"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/et_hidden_check"
+        android:cacheColorHint="#00000000"
+        android:divider="#dddbdb"
+        android:dividerHeight="1dp"
+        /> -->
+    <com.sunnyit.common.view.ClickLoadListview
+        android:id="@+id/ListView_hidden_check"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/et_hidden_check"
+        android:cacheColorHint="#00000000"
+        android:divider="#dddbdb"
+        android:dividerHeight="1dp"
+        />
+    
+    <com.sunnyit.common.view.CustomFAB
+	    android:id="@+id/company_hidden_search"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/system_help"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        yk:bg_color="@color/light_blue"
+        android:tint="@android:color/white"
+    	 />
+    
+</RelativeLayout>

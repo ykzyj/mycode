@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gallery"
+    android:onClick="FinishThisActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555555"
+     >
+
+    <RelativeLayout
+        android:id="@+id/peter_privewphoto_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/top_bar_normal_bg" >
+
+        <TextView
+            android:id="@+id/peter_priview_photo_way"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClickSelectWay"
+            android:padding="5dp"
+            android:text="选择"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/peter_privewphoto_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="1/16"
+            android:textColor="#F2F2F2"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/peter_priview_photo_delets"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClickRemove"
+            android:padding="5dp"
+            android:text="删除"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/peter_privewphoto_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/peter_privewphoto_top_bar" />
+
+    <Gallery
+        android:id="@+id/peter_privewphoto_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#55000000"
+        android:gravity="center_vertical"
+        android:spacing="15dp" />
+
+    <TextView
+        android:id="@+id/peter_privewphoto_title_text_contnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="1/16"
+        android:textColor="#F2F2F2"
+        android:textSize="15sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

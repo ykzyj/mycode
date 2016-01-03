@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+        android:id="@+id/topbar_pwup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/login_bg"
+        yk:titletext="技术支持"
+        yk:titletextcolor="#ffffff"
+        yk:titletextsize="18sp"
+        yk:lefttext="返回"
+        yk:lefttextcolor="#ffffff"
+        yk:lefttextsize="12sp"
+        yk:leftbackground="@drawable/top_left_button"
+        />
+    
+    <ScrollView 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:layout_below="@id/topbar_pwup"
+		    android:scrollbars="vertical"
+		    >
+    
+		   <LinearLayout
+		        android:id="@+id/place_linear"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_horizontal"
+		        android:orientation="vertical" 
+		        >
+		        
+		       <RelativeLayout
+		            android:id="@+id/relative_company_name"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/relativelayout_bg" 
+		            >
+		
+		            <TextView
+		                android:id="@+id/tvo_company_name"
+		                style="@style/normalText"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="10dip"
+		                android:layout_marginTop="10.0dip"
+		                android:text="@string/company_name_tv"
+		                android:textColor="#FF7D899D"
+		                android:textSize="16.0dp" />
+		
+		            <TextView
+		                android:id="@+id/tvt_company_name"
+		                style="@style/normalText.size"
+		                android:textSize="16.0dp"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignTop="@id/tvo_company_name"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="10dip"
+		                android:layout_toRightOf="@id/tvo_company_name" 
+		                android:text="@string/company_name_sl"
+		                />
+		            
+		            <ImageView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:layout_marginRight="10dip"
+			            android:src="@drawable/ic_arrow_right" 
+			            />  
+		
+		        </RelativeLayout>
+		
+		        <RelativeLayout
+		            android:id="@+id/relative_company_address"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/panel_bg" 
+		            >
+		
+		            <TextView
+		                android:id="@+id/tvo_company_address"
+		                style="@style/normalText"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="10dip"
+		                android:layout_marginTop="10.0dip"
+		                android:text="@string/company_address"
+		                android:textColor="#FF7D899D"
+		                android:textSize="16.0dp" />
+		
+		            <TextView
+		                android:id="@+id/tvt_company_address_content"
+		                style="@style/normalText.size"
+		                android:textSize="16.0dp"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignTop="@id/tvo_company_address"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="10dip"
+		                android:layout_toRightOf="@id/tvo_company_address" 
+		                android:text="@string/company_address_content"
+		                />
+		
+		        </RelativeLayout>
+		
+		        <RelativeLayout
+		            android:id="@+id/relative_company_phone_one"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/relativelayout_bg" 
+		            android:clickable="true"
+		            >
+		
+		            <TextView
+		                android:id="@+id/tvo_company_phone_one"
+		                style="@style/normalText"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="10dip"
+		                android:layout_marginTop="10.0dip"
+		                android:text="@string/company_phone"
+		                android:textColor="#FF7D899D"
+		                android:textSize="16.0dp" />
+		
+		            <TextView
+		                android:id="@+id/tvt_company_phone_one"
+		                style="@style/normalText.size"
+		                android:textSize="16.0dp"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignTop="@id/tvo_company_phone_one"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="10dip"
+		                android:layout_toRightOf="@id/tvo_company_phone_one" 
+		                android:text="@string/company_phone_content_1"
+		                />
+		            
+		            <ImageView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:layout_marginRight="10dip"
+			            android:src="@drawable/ic_arrow_right" 
+			            />  
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/relative_company_phone_two"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/relativelayout_bg" 
+		            android:clickable="true"
+		            >
+		
+		            <TextView
+		                android:id="@+id/tvo_company_phone_two"
+		                style="@style/normalText.size"
+		                android:textSize="16.0dp"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="55dip"
+		                android:text="@string/company_phone_content_2"
+		                />
+		            
+		            <ImageView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:layout_marginRight="10dip"
+			            android:src="@drawable/ic_arrow_right" 
+			            />  
+		        </RelativeLayout>
+		
+		        <RelativeLayout
+		            android:id="@+id/relative_company_fax"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/panel_bg" 
+		            >
+		
+		            <TextView
+		                android:id="@+id/tvo_company_fax"
+		                style="@style/normalText"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="10dip"
+		                android:layout_marginTop="10.0dip"
+		                android:text="@string/company_fax"
+		                android:textColor="#FF7D899D"
+		                android:textSize="16.0dp" />
+		
+		            <TextView
+		                android:id="@+id/tvt_company_fax"
+		                style="@style/normalText.size"
+		                android:textSize="16.0dp"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignTop="@id/tvo_company_fax"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="10dip"
+		                android:layout_toRightOf="@id/tvo_company_fax" 
+		                android:text="@string/company_fax_content"
+		                />
+		            
+		
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/relative_company_url"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/relativelayout_bg" 
+		            android:clickable="true"
+		            >
+		
+		            <TextView
+		                android:id="@+id/tvo_company_url"
+		                style="@style/normalText"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="10dip"
+		                android:layout_marginTop="10.0dip"
+		                android:text="@string/company_url"
+		                android:textColor="#FF7D899D"
+		                android:textSize="16.0dp" />
+		
+		            <TextView
+		                android:id="@+id/tvt_company_url"
+		                style="@style/normalText.size"
+		                android:textSize="16.0dp"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignTop="@id/tvo_company_url"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="10dip"
+		                android:layout_toRightOf="@id/tvo_company_url" 
+		                android:text="@string/company_url_content"
+		                />
+		            
+		             <ImageView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:layout_marginRight="10dip"
+			            android:src="@drawable/ic_arrow_right" 
+			            /> 
+		        </RelativeLayout>
+		    </LinearLayout>
+    
+        </ScrollView>
+
+</RelativeLayout>

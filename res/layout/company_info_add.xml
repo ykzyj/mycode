@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+	        android:id="@+id/topbar_comInfo_add"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@drawable/login_bg"
+	        yk:titletext="企业基本信息添加"
+	        yk:titletextcolor="#ffffff"
+	        yk:titletextsize="18sp"
+	        yk:lefttext="返回"
+	        yk:lefttextcolor="#ffffff"
+	        yk:lefttextsize="12sp"
+	        yk:leftbackground="@drawable/top_left_button"
+	        yk:righttext="提交"
+	        yk:rightcolor="#ffffff"
+	        yk:rightsize="12sp"
+	        yk:rightbackground="@drawable/top_right_button"
+	        />
+    
+    	<ScrollView 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:scrollbars="vertical"
+		    android:layout_below="@+id/topbar_comInfo_add"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    >
+    
+    		<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="#ffffff"
+			    android:orientation="vertical"
+			    android:focusable="true"   
+			    android:focusableInTouchMode="true"  
+			    >
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="企业名称:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_e_companyName"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:textSize="16sp"
+			            android:hint="请输入企业名称"
+			            />
+			    </LinearLayout>
+			    
+			     <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="3dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="企业地址:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_e_companyAddress"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:textSize="16sp"
+			            android:hint="请输入企业地址"
+			            />
+			    </LinearLayout>
+			    
+			     <LinearLayout
+			        android:id="@+id/lin_e_companyProperty"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="3dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="企业性质:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <com.sunnyit.common.view.ChoiceEditView
+			            android:id="@+id/et_e_companyProperty"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入企业性质"
+			            />
+			    </LinearLayout>
+			    
+			      <LinearLayout
+			          android:id="@+id/lin_e_managerlayer"
+			          android:layout_width="wrap_content"
+			          android:layout_height="wrap_content"
+			          android:layout_marginLeft="10dp"
+			          android:layout_marginRight="10dp"
+			          android:layout_marginTop="3dp"
+			          android:background="@drawable/login_input"
+			          android:orientation="horizontal" >
+				
+				        <TextView 
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="监管层级:"
+				            android:textSize="16sp"
+				            android:paddingLeft="10dp" 
+				            android:textColor="@color/light_blue"
+				            />
+				
+				        <com.sunnyit.common.view.ChoiceEditView
+			                android:id="@+id/et_e_managerlayer"
+				            android:layout_width="fill_parent"
+				            android:layout_height="40dp"
+				            android:background="#00ffffff"
+				            android:paddingLeft="10dp" 
+				            android:hint="请输入监管层级"
+			                />
+			    </LinearLayout>
+			    
+		      <LinearLayout
+		          	android:id="@+id/lin_e_departmentName"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="3dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="主管部门:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <com.sunnyit.common.view.ChoiceEditView
+			            android:id="@+id/et_e_departmentName"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入主管部门"
+			            />
+			    </LinearLayout>
+			    
+		      <LinearLayout
+		          	android:id="@+id/lin_e_localName"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="3dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="所属区域:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <com.sunnyit.common.view.ChoiceEditView
+			            android:id="@+id/et_e_localName"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入所属区域"
+			            />
+			    </LinearLayout>
+			    
+		      <LinearLayout
+		          	android:id="@+id/lin_e_belongIndustry"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="3dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="所属行业 :"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <com.sunnyit.common.view.ChoiceEditView
+			            android:id="@+id/et_e_belongIndustry"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入所属行业"
+			            />
+			    </LinearLayout>
+			    
+		      <LinearLayout
+		          android:id="@+id/lin_e_legal_representative"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="3dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="法定代表人 :"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_e_legal_representative"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:textSize="16sp"
+			            android:hint="请输入法定代表人"
+			            />
+			    </LinearLayout>
+			    
+		      <LinearLayout
+		            android:id="@+id/lin_e_contact_phone"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="3dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="联系电话 :"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_e_contact_phone"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:textSize="16sp"
+			            android:hint="请输入联系电话"
+			            android:inputType="number"
+			            />
+			    </LinearLayout>
+			    
+		      <LinearLayout
+		          	android:id="@+id/lin_e_safe_person"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="3dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="安全负责人 :"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			         <EditText
+			            android:id="@+id/et_e_safe_person"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:textSize="16sp"
+			            android:hint="请输入安全负责人"
+			            />
+			    </LinearLayout>
+			    
+		      <LinearLayout
+		         	android:id="@+id/lin_e_safe_person_phone"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="3dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="联系电话 :"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			         <EditText
+			            android:id="@+id/et_e_safe_person_phone"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:textSize="16sp"
+			            android:hint="请输入联系电话"
+			            android:inputType="number"
+			            />
+			    </LinearLayout>
+			    
+		      <LinearLayout
+		          	android:id="@+id/lin_e_mangementMethod"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="3dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="生产经营方式 :"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <com.sunnyit.common.view.ChoiceEditView
+			            android:id="@+id/et_e_mangementMethod"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:textSize="16sp"
+			            android:hint="请输入生产经营方式"
+			            />
+			    </LinearLayout>
+			    
+		      <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="3dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="工商营业执照证号 :"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_e_businessCode"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:textSize="16sp"
+			            android:hint="请输入证号"
+			            />
+			    </LinearLayout>
+			    
+			</LinearLayout>
+        
+        </ScrollView>
+        
+</RelativeLayout>

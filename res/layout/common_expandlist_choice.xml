@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" 
+    >
+	    
+     <com.sunnyit.common.view.TopBarView 
+        android:id="@+id/topbar_common_exlist_choice"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/login_bg"
+        yk:titletext="区域选择"
+        yk:titletextcolor="#ffffff"
+        yk:titletextsize="18sp"
+        yk:lefttext="返回"
+        yk:lefttextcolor="#ffffff"
+        yk:lefttextsize="12sp"
+        yk:leftbackground="@drawable/top_left_button"
+        />
+     
+       <ListView 
+	        android:id="@+id/exlist_common_choice"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@+id/topbar_common_exlist_choice"
+	        />
+	    
+</RelativeLayout>

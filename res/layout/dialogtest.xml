@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffffff"
+    android:orientation="vertical"
+    >
+    
+    <Button 
+        android:id="@+id/but01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="样式1"
+        />
+    
+    <Button 
+        android:id="@+id/but02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="样式2"
+        />
+    
+    <Button 
+        android:id="@+id/but03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="样式3"
+        />
+    
+    <Button 
+        android:id="@+id/but04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="样式4"
+        />
+    
+    <Button 
+        android:id="@+id/but05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="样式5"
+        />
+    
+    <Button 
+        android:id="@+id/but06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="样式6"
+        />
+    
+    <Button 
+        android:id="@+id/but07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="样式7"
+        />
+    
+    <Button 
+        android:id="@+id/but08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="样式8"
+        />
+    
+    <Button 
+        android:id="@+id/but09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="样式9"
+        />
+    
+     <Button 
+        android:id="@+id/but10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="样式10"
+        />
+     
+     <Button 
+        android:id="@+id/but11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="样式11"
+        />
+     
+      <Button 
+        android:id="@+id/but12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="样式12"
+        />
+    
+</LinearLayout>

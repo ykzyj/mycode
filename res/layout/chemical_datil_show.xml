@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+	        android:id="@+id/topbar_chemiacl_show"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@drawable/login_bg"
+	        yk:titletext="危化品信息"
+	        yk:titletextcolor="#ffffff"
+	        yk:titletextsize="18sp"
+	        yk:lefttext="返回"
+	        yk:lefttextcolor="#ffffff"
+	        yk:lefttextsize="12sp"
+	        yk:leftbackground="@drawable/top_left_button"
+	        />
+     
+ 	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#ffffff"
+	    android:orientation="vertical"
+	    android:focusable="true"   
+	    android:focusableInTouchMode="true"  
+	    android:layout_marginTop="2dp"
+	    android:layout_below="@+id/topbar_chemiacl_show"
+	    >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/nei_title_bg"
+	        android:orientation="horizontal" 
+	        >
+	
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="品名:"
+	            android:textSize="16sp"
+	            android:paddingLeft="10dp" 
+	            android:textColor="@color/light_blue"
+	            />
+	
+	        <EditText
+	            android:id="@+id/et_c_name"
+	            android:layout_width="fill_parent"
+	            android:layout_height="42dp"
+	            android:background="#00ffffff"
+	            android:paddingLeft="10dp" 
+	            android:textSize="16sp"
+	            android:enabled="false"
+	            />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/nei_title_bg"
+	        android:orientation="horizontal" 
+	        >
+	
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="别名:"
+	            android:textSize="16sp"
+	            android:paddingLeft="10dp" 
+	            android:textColor="@color/light_blue"
+	            />
+	
+	        <EditText
+	            android:id="@+id/et_c_aliasname"
+	            android:layout_width="fill_parent"
+	            android:layout_height="42dp"
+	            android:background="#00ffffff"
+	            android:paddingLeft="10dp" 
+	            android:textSize="16sp"
+	            android:enabled="false"
+	            />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/nei_title_bg"
+	        android:orientation="horizontal" 
+	        android:enabled="false"
+	        >
+	
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="CAS编号:"
+	            android:textSize="16sp"
+	            android:paddingLeft="10dp" 
+	            android:textColor="@color/light_blue"
+	            />
+
+	        <EditText
+	            android:id="@+id/et_c_cas"
+	            android:layout_width="fill_parent"
+	            android:layout_height="42dp"
+	            android:background="#00ffffff"
+	            android:ems="10"
+	            android:enabled="false"
+	            android:textSize="16sp"
+	            android:paddingLeft="10dp" >
+
+	            <!-- <requestFocus /> -->
+	        </EditText>
+
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/nei_title_bg"
+	        android:orientation="horizontal" 
+	        >
+	
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="是否剧毒:"
+	            android:textSize="16sp"
+	            android:paddingLeft="10dp" 
+	            android:textColor="@color/light_blue"
+	            />
+	
+	        <EditText
+	            android:id="@+id/et_c_isvirulen"
+	            android:layout_width="fill_parent"
+	            android:layout_height="42dp"
+	            android:background="#00ffffff"
+	            android:paddingLeft="10dp" 
+	            android:textSize="16sp"
+	            android:enabled="false"
+	            />
+	    </LinearLayout>
+	    
+	    <ExpandableListView
+	        android:id="@+id/exlist_chenical_info"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:clickable="false" 
+	        android:divider="@color/bg_gray" 
+	        android:dividerHeight="1.0dp" 
+	        android:fadingEdge="vertical"  
+	        android:childDivider="@color/bg_gray" 
+	        android:cacheColorHint="#FFFFFF"
+	        android:background="#FFFFFF" 
+	        >
+	    </ExpandableListView>
+	    
+	</LinearLayout>
+        
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+   	android:layout_marginLeft="10dp"
+   	android:layout_marginRight="10dp"
+   	android:background="@drawable/white_circular5"
+    >
+    
+    <TextView
+        android:id="@+id/tv_dg_title"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center"
+        android:text="提醒"
+        android:background="@drawable/bg_blue14"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
+	
+	
+    <TextView
+        android:id="@+id/tv_dg_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="信息提示内容"
+        android:textColor="#6c6c6c"
+        android:textSize="16sp"/>
+
+    <View
+      	android:layout_width="match_parent"
+      	android:layout_height="1dp"
+      	android:background="@drawable/divider_horizontal_line" 
+      	/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        >
+
+        <Button
+            android:id="@+id/but_dg_positiveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/dialog_bottomleft_circular"
+            android:textColor="#6c6c6c"
+            android:textSize="18sp"
+            android:text="确认"
+            android:layout_weight="1"
+            />
+        
+        <View
+	      	android:layout_width="1dp"
+	      	android:layout_height="match_parent"
+	      	android:background="@drawable/divider_horizontal_line" />
+
+        <Button
+            android:id="@+id/but_dg_negativeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/dialog_bottomright_circular"
+            android:textColor="#6c6c6c"
+            android:textSize="18sp"
+            android:text="取消"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

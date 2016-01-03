@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    tools:context=".common.activity.BaseActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rel_info_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/txt_item_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/f_txt_item_description"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:text="具体检查信息"
+            android:textColor="@color/light_blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/f_txt_item_repairType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_item_description"
+            android:text="整改类型:"
+            android:textColor="#9b9b9b"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_item_repairType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_item_description"
+            android:layout_toRightOf="@+id/f_txt_item_repairType"
+            android:maxLines="1"
+            android:text="限期整改"
+            android:textColor="#00acff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/f_txt_item_repairLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_item_description"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_item_repairType"
+            android:text="截止时间:"
+            android:textColor="#9b9b9b"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_item_repairLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_item_description"
+            android:layout_toRightOf="@+id/f_txt_item_repairLimit"
+            android:maxLines="1"
+            android:text="2015-06-18"
+            android:textColor="#00acff"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_standitem_measure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_item_repairType"
+            android:background="@drawable/rel_menu_cq"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/img_standitem_measure"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/user_feedback" />
+
+            <TextView
+                android:id="@+id/but_standitem_measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_standitem_measure"
+                android:text="整改措施"
+                android:textColor="#ff6600"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_standitem_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_item_repairType"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rel_standitem_measure"
+            android:background="@drawable/rel_menu_cq"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/img_standitem_condition"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/user_feedback" />
+
+            <TextView
+                android:id="@+id/but_standitem_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_standitem_condition"
+                android:text="整改情况"
+                android:textColor="@color/light_blue"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_info_right"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp" >
+
+        <RadioGroup
+            android:id="@+id/rg_isok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" >
+
+            <RadioButton
+                android:id="@+id/rb_ck_stand_yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_blue_grey18"
+                android:button="@null"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="合格"
+                android:textColor="@drawable/radio_btn_color"
+                android:textSize="12.0sp" />
+
+            <RadioButton
+                android:id="@+id/rb_ck_stand_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/radio_blue_grey18"
+                android:button="@null"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="不合格"
+                android:textColor="@drawable/radio_btn_color"
+                android:textSize="12.0sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

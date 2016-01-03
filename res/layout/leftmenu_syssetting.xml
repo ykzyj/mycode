@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <com.sunnyit.common.view.TopBarView 
+        android:id="@+id/topbar_pwup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/login_bg"
+        yk:titletext="系统设置"
+        yk:titletextcolor="#ffffff"
+        yk:titletextsize="18sp"
+        yk:lefttext="返回"
+        yk:lefttextcolor="#ffffff"
+        yk:lefttextsize="12sp"
+        yk:leftbackground="@drawable/top_left_button"
+        />
+    
+   	    <ScrollView 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:layout_below="@id/topbar_pwup"
+		    android:scrollbars="vertical"
+		    >
+		    
+	        <RelativeLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    >
+    
+			    <TextView 
+			        android:id="@+id/push_title"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="推送设置"
+			        android:textSize="14sp"
+			        android:textColor="#838687"
+			        android:layout_marginLeft="20dip"
+			        android:layout_marginTop="10dip"
+			        />
+			
+			    <View
+			        android:id="@+id/divider_line"
+			        android:layout_width="fill_parent"
+			        android:layout_height="0.5dp"
+			        android:layout_below="@id/push_title"
+			        android:layout_marginTop="5dip"
+			        android:background="@drawable/horizontal_separation_line" 
+			        />
+			    
+			     <RelativeLayout
+			            android:id="@+id/relative_push_switch"
+			            android:layout_width="fill_parent"
+			            android:layout_height="45dip"
+			            android:layout_below="@id/divider_line"
+			            android:clickable="true"
+			            >
+			            
+			             <TextView
+					        android:id="@+id/push_switch_title"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_marginLeft="22dip"
+					        android:text="推送通知"
+					        android:textColor="#000000"
+					        android:textSize="15sp"
+					        android:layout_centerVertical="true"
+					        />
+			             
+			             <ToggleButton
+					        android:id="@+id/TogBtn_push_switch"
+					        android:layout_width="100dp"
+					        android:layout_height="wrap_content"
+					        android:background="@android:color/transparent"
+					        android:button="@drawable/checkbox_iphone"
+					        android:checked="true"
+					        android:text=""
+					        android:textOff=""
+					        android:textOn="" 
+				         	android:layout_alignParentRight="true"
+				            android:layout_centerVertical="true"
+				            android:layout_marginRight="10dip"
+					        />
+			             
+			        </RelativeLayout>
+			
+			    <View
+			        android:id="@+id/divider_line_switch"
+			        android:layout_width="fill_parent"
+			        android:layout_height="0.5dp"
+			        android:layout_below="@id/relative_push_switch"
+			        android:layout_marginLeft="20dp"
+			        android:background="@drawable/horizontal_separation_line" 
+			        />
+			    
+			    <RelativeLayout
+			            android:id="@+id/relative_push_time"
+			            android:layout_width="fill_parent"
+			            android:layout_height="45dip"
+			            android:layout_below="@id/divider_line_switch"
+			            android:background="@drawable/relativelayout_bg_onlypressed" 
+			            android:clickable="true"
+			            >
+			            
+					    <TextView
+					        android:id="@+id/push_time_title"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_marginLeft="22dip"
+					        android:text="推送时间"
+					        android:textColor="#000000"
+					        android:textSize="15sp"
+					        android:layout_centerVertical="true"
+					        />
+					    
+					    <TextView
+			                android:id="@+id/push_time"
+			                android:textSize="15sp"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_centerVertical="true"
+			                android:text="00:00--23:59"
+			                android:textColor="#29abe2"
+			                android:layout_alignParentRight="true"
+			                android:layout_marginRight="30dip"
+			                />
+			            
+			            <ImageView
+				            android:id="@+id/choice_arrow_right"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_alignParentRight="true"
+				            android:layout_centerVertical="true"
+				            android:layout_marginRight="10dip"
+				            android:src="@drawable/ic_arrow_right" 
+				            /> 
+			        </RelativeLayout>
+			    
+			    <View
+			        android:id="@+id/divider_line_time"
+			        android:layout_width="fill_parent"
+			        android:layout_height="0.5dp"
+			        android:layout_below="@id/relative_push_time"
+			        android:background="@drawable/horizontal_separation_line" 
+			        />
+			    
+			     <TextView 
+			        android:id="@+id/Application_setting"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="应用设置"
+			        android:textSize="14sp"
+			        android:textColor="#838687"
+			        android:layout_below="@id/divider_line_time"
+			        android:layout_marginLeft="20dip"
+			        android:layout_marginTop="10dip"
+			        />
+			
+			    <View
+			        android:id="@+id/as_divider_line"
+			        android:layout_width="fill_parent"
+			        android:layout_height="0.5dp"
+			        android:layout_below="@id/Application_setting"
+			        android:layout_marginTop="5dip"
+			        android:background="@drawable/horizontal_separation_line" 
+			        />
+			    
+			     <RelativeLayout
+			            android:id="@+id/relative_al_pattern"
+			            android:layout_width="fill_parent"
+			            android:layout_height="45dip"
+			            android:layout_below="@id/as_divider_line"
+			            android:clickable="true"
+			            >
+			            
+			             <TextView
+					        android:id="@+id/pattern_switch"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_marginLeft="22dip"
+					        android:text="夜间模式"
+					        android:textColor="#000000"
+					        android:textSize="15sp"
+					        android:layout_centerVertical="true"
+					        />
+			             
+			             <ToggleButton
+					        android:id="@+id/TogBtn_pattern_switch"
+					        android:layout_width="100dp"
+					        android:layout_height="wrap_content"
+					        android:background="@android:color/transparent"
+					        android:button="@drawable/checkbox_iphone"
+					        android:checked="false"
+					        android:text=""
+					        android:textOff=""
+					        android:textOn="" 
+				         	android:layout_alignParentRight="true"
+				            android:layout_centerVertical="true"
+				            android:layout_marginRight="10dip"
+					        />
+			             
+			        </RelativeLayout>
+			        
+			      	<View
+				        android:id="@+id/pattern_divider_line"
+				        android:layout_width="fill_parent"
+				        android:layout_height="0.5dp"
+				        android:layout_below="@id/relative_al_pattern"
+				        android:layout_marginLeft="20dp"
+				        android:background="@drawable/horizontal_separation_line" 
+				        />
+			        
+			     	<RelativeLayout
+			            android:id="@+id/relative_clear_cache"
+			            android:layout_width="fill_parent"
+			            android:layout_height="45dip"
+			            android:layout_below="@id/pattern_divider_line"
+			            android:clickable="true"
+			            android:background="@drawable/relativelayout_bg_onlypressed" 
+			            >
+			            
+			             <TextView
+					        android:id="@+id/clear_cache_tetle"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_marginLeft="22dip"
+					        android:text="清除缓存"
+					        android:textColor="#000000"
+					        android:textSize="15sp"
+					        android:layout_centerVertical="true"
+					        />          
+			
+			             
+			             <TextView 
+			                 android:id="@+id/clear_cache_count"
+			                 android:layout_width="wrap_content"
+			                 android:layout_height="wrap_content"
+			                 android:textSize="15sp"
+			                 android:textColor="#29abe2"
+			                 android:layout_centerVertical="true"
+			                 android:text="2451KB"
+			                 android:layout_alignParentRight="true"
+				             android:layout_marginRight="30dip"
+			                 />
+			             
+			            <ImageView
+				            android:id="@+id/choice_clear_right"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_alignParentRight="true"
+				            android:layout_centerVertical="true"
+				            android:layout_marginRight="10dip"
+				            android:src="@drawable/ic_arrow_right" 
+				            /> 
+			             
+			        </RelativeLayout>
+			
+			    <View
+			        android:id="@+id/divider_pattern_switch"
+			        android:layout_width="fill_parent"
+			        android:layout_height="0.5dp"
+			        android:layout_below="@id/relative_clear_cache"
+			        android:background="@drawable/horizontal_separation_line" 
+			        />
+			    
+			    <TextView 
+			        android:id="@+id/server_setting"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="网络设置"
+			        android:textSize="14sp"
+			        android:textColor="#838687"
+			        android:layout_below="@id/divider_pattern_switch"
+			        android:layout_marginLeft="20dip"
+			        android:layout_marginTop="10dip"
+			        />
+			
+			    <View
+			        android:id="@+id/server_divider_line"
+			        android:layout_width="fill_parent"
+			        android:layout_height="0.5dp"
+			        android:layout_below="@id/server_setting"
+			        android:layout_marginTop="5dip"
+			        android:background="@drawable/horizontal_separation_line" 
+			        />
+			    
+			     <RelativeLayout
+			            android:id="@+id/relative_server_setting_pattern"
+			            android:layout_width="fill_parent"
+			            android:layout_height="45dip"
+			            android:layout_below="@id/server_divider_line"
+			            android:clickable="true"
+			            >
+			            
+			             <TextView
+					        android:id="@+id/pattern_wifi_switch"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_marginLeft="22dip"
+					        android:text="wifi*3G模式"
+					        android:textColor="#000000"
+					        android:textSize="15sp"
+					        android:layout_centerVertical="true"
+					        />
+			             
+			             <ToggleButton
+					        android:id="@+id/TogBtn_pattern_wifi_switch"
+					        android:layout_width="100dp"
+					        android:layout_height="wrap_content"
+					        android:background="@android:color/transparent"
+					        android:button="@drawable/checkbox_iphone"
+					        android:checked="true"
+					        android:text=""
+					        android:textOff=""
+					        android:textOn="" 
+				         	android:layout_alignParentRight="true"
+				            android:layout_centerVertical="true"
+				            android:layout_marginRight="10dip"
+					        />
+			             
+			        </RelativeLayout>
+			        
+			      	<View
+				        android:id="@+id/pattern_divider_url_line"
+				        android:layout_width="fill_parent"
+				        android:layout_height="0.5dp"
+				        android:layout_below="@id/relative_server_setting_pattern"
+				        android:layout_marginLeft="20dp"
+				        android:background="@drawable/horizontal_separation_line" 
+				        />
+			        
+			     	<RelativeLayout
+			            android:id="@+id/relative_url_steeing"
+			            android:layout_width="fill_parent"
+			            android:layout_height="45dip"
+			            android:layout_below="@id/pattern_divider_url_line"
+			            android:clickable="true"
+			            android:background="@drawable/relativelayout_bg_onlypressed" 
+			            >
+			            
+			             <TextView
+					        android:id="@+id/tv_setting_url"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_marginLeft="22dip"
+					        android:text="服务器地址"
+					        android:textColor="#000000"
+					        android:textSize="15sp"
+					        android:layout_centerVertical="true"
+					        />          
+			
+			             
+			             <TextView 
+			                 android:id="@+id/tv_setting_haveurl"
+			                 android:layout_width="wrap_content"
+			                 android:layout_height="wrap_content"
+			                 android:textSize="15sp"
+			                 android:textColor="#29abe2"
+			                 android:layout_centerVertical="true"
+			                 android:text="已设置"
+			                 android:layout_alignParentRight="true"
+				             android:layout_marginRight="30dip"
+			                 />
+			             
+			            <ImageView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_alignParentRight="true"
+				            android:layout_centerVertical="true"
+				            android:layout_marginRight="10dip"
+				            android:src="@drawable/ic_arrow_right" 
+				            /> 
+			             
+		        	</RelativeLayout>
+			     	<View
+				        android:id="@+id/pattern_divider_null_line"
+				        android:layout_width="fill_parent"
+				        android:layout_height="0.5dp"
+				        android:layout_below="@id/relative_url_steeing"
+				        android:background="@drawable/horizontal_separation_line" 
+				        />
+    
+	       </RelativeLayout>
+     </ScrollView>
+
+</RelativeLayout>

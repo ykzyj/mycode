@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+	        android:id="@+id/topbar_standcheck_table"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@drawable/login_bg"
+	        yk:titletext="检查标准表格"
+	        yk:titletextcolor="#ffffff"
+	        yk:titletextsize="18sp"
+	        yk:lefttext="返回"
+	        yk:lefttextcolor="#ffffff"
+	        yk:lefttextsize="12sp"
+	        yk:leftbackground="@drawable/top_left_button"
+	        yk:righttext="检查"
+	        yk:rightcolor="#ffffff"
+	        yk:rightsize="12sp"
+	        yk:rightbackground="@drawable/top_right_button"
+	        />
+    
+			<RelativeLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="#ffffff"
+			    android:orientation="vertical"
+			    android:focusable="true"   
+			    android:focusableInTouchMode="true"  
+			    android:layout_below="@+id/topbar_standcheck_table"
+			    android:layout_marginTop="10dp"
+			    >
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_comname"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查企业:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_table_companyname"
+			            android:layout_width="fill_parent"
+			            android:layout_height="45dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:textSize="16sp"
+			            android:hint="请输入检查企业名称"
+			            />
+			        
+			    </LinearLayout>
+			    
+			    <ImageView 
+		            android:id="@+id/img_com_add"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/plus_blue48"
+		            android:layout_alignRight="@+id/lin_comname"
+		            android:layout_marginTop="5dp"
+		            android:layout_marginRight="5dp"
+		            />
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/panel_bg"
+			        android:orientation="vertical" 
+			        android:layout_marginTop="3dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_below="@+id/lin_comname"
+			        >
+			
+			        <RelativeLayout
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            >
+			            <TextView 
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="检查表格:"
+				            android:textSize="16sp"
+				            android:paddingLeft="10dp" 
+				            android:textColor="@color/light_blue"
+				            android:layout_marginTop="5dp"
+				            android:layout_centerVertical="true"
+				            />
+				        
+				        <Button
+					        android:id="@+id/but_standtable_add" 
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="新建检查表格"
+					        android:textSize="16sp"
+					        android:textColor="#ffffff"
+					        android:layout_marginRight="2dp"
+					        android:background="@drawable/but_rect_blue"
+					        android:layout_alignParentRight="true"
+					        />
+		            </RelativeLayout>
+			        
+			        <ListView 
+			            android:id="@+id/lv_standtable_choice"
+			            android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="15dp"
+				        android:layout_marginRight="15dp"
+				        android:layout_marginBottom="5dp"
+			            />
+			        
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="*长按可删除检查表格"
+			            android:textSize="14sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#ff0000"
+			            android:layout_gravity="center_horizontal"
+			            android:layout_marginTop="5dp"
+			            />
+			
+			    </LinearLayout>
+			    
+			    <ListView 
+			        android:id="@+id/lv_search_tx"   
+                    android:layout_width="match_parent"  
+                    android:layout_height="wrap_content" 
+                    android:layout_marginLeft="100dp"
+                    android:layout_below="@+id/lin_comname"
+                    />
+			    
+			</RelativeLayout>
+        
+</RelativeLayout>

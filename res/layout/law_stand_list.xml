@@ -1,0 +1,47 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusable="true"   
+    android:focusableInTouchMode="true"  
+    android:orientation="vertical"
+   	>
+   	
+    <com.sunnyit.common.view.TopBarView 
+        android:id="@+id/topbar_law_info"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/login_bg"
+        yk:titletext="法律法规信息列表"
+        yk:titletextcolor="#ffffff"
+        yk:titletextsize="18sp"
+        yk:lefttext="返回"
+        yk:lefttextcolor="#ffffff"
+        yk:lefttextsize="12sp"
+        yk:leftbackground="@drawable/top_left_button"
+        />
+    
+    <com.sunnyit.common.view.ClickLoadListview
+        android:id="@+id/ListView_law_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar_law_info"
+        />
+    
+    <com.sunnyit.common.view.CustomFAB
+	    android:id="@+id/law_stand_search"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/system_help"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="25dp"
+        yk:bg_color="@color/light_blue"
+        android:tint="@android:color/white"
+     	/>
+    
+</RelativeLayout>

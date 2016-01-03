@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+	        android:id="@+id/topbar_en_standcheck_show"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@drawable/login_bg"
+	        yk:titletext="对照标准检查基础信息"
+	        yk:titletextcolor="#ffffff"
+	        yk:titletextsize="18sp"
+	        yk:lefttext="返回"
+	        yk:lefttextcolor="#ffffff"
+	        yk:lefttextsize="12sp"
+	        yk:leftbackground="@drawable/top_left_button"
+	        />
+     
+ 	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#ffffff"
+	    android:orientation="vertical"
+	    android:focusable="true"   
+	    android:focusableInTouchMode="true"  
+	    android:layout_marginTop="10dp"
+	    android:layout_below="@+id/topbar_en_standcheck_show"
+	    >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+			android:background="@drawable/login_input"
+	        android:orientation="horizontal" 
+	        >
+	
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="被检查单位:"
+	            android:textSize="16sp"
+	            android:paddingLeft="10dp" 
+	            android:textColor="@color/light_blue"
+	            />
+	
+	        <EditText
+	            android:id="@+id/et_ck_companyName"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dp"
+	            android:background="#00ffffff"
+	            android:paddingLeft="10dp" 
+	            android:textSize="16sp"
+	            android:enabled="false"
+	            />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:background="@drawable/login_input"
+			android:layout_marginTop="3dp"
+	        android:orientation="horizontal" 
+	        >
+	
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="单位地址:"
+	            android:textSize="16sp"
+	            android:paddingLeft="10dp" 
+	            android:textColor="@color/light_blue"
+	            />
+	
+	        <EditText
+	            android:id="@+id/et_ck_companyaddress"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dp"
+	            android:background="#00ffffff"
+	            android:paddingLeft="10dp" 
+	            android:textSize="16sp"
+	            android:enabled="false"
+	            />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:background="@drawable/login_input"
+			android:layout_marginTop="3dp"
+	        android:orientation="horizontal" 
+	        android:enabled="false"
+	        >
+	
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="法定代表人:"
+	            android:textSize="16sp"
+	            android:paddingLeft="10dp" 
+	            android:textColor="@color/light_blue"
+	            />
+	
+	        <EditText
+	            android:id="@+id/et_ck_representative"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dp"
+	            android:background="#00ffffff"
+	            android:paddingLeft="10dp" 
+	            android:textSize="16sp"
+	            android:enabled="false"
+	            />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:background="@drawable/login_input"
+			android:layout_marginTop="3dp"
+	        android:orientation="horizontal" 
+	        >
+	
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="联系电话:"
+	            android:textSize="16sp"
+	            android:paddingLeft="10dp" 
+	            android:textColor="@color/light_blue"
+	            />
+	
+	        <EditText
+	            android:id="@+id/et_ck_phone"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dp"
+	            android:background="#00ffffff"
+	            android:paddingLeft="10dp" 
+	            android:textSize="16sp"
+	            android:enabled="false"
+	            />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:background="@drawable/login_input"
+			android:layout_marginTop="3dp"
+	        android:orientation="horizontal" 
+	        >
+	
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="检查场所:"
+	            android:textSize="16sp"
+	            android:paddingLeft="10dp" 
+	            android:textColor="@color/light_blue"
+	            />
+	
+	        <EditText
+	            android:id="@+id/et_ck_site"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dp"
+	            android:background="#00ffffff"
+	            android:paddingLeft="10dp" 
+	            android:textSize="16sp"
+	            android:enabled="false"
+	            />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:background="@drawable/login_input"
+			android:layout_marginTop="3dp"
+	        android:orientation="horizontal" 
+	        >
+	
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="检查部门:"
+	            android:textSize="16sp"
+	            android:paddingLeft="10dp" 
+	            android:textColor="@color/light_blue"
+	            />
+	
+	        <EditText
+	            android:id="@+id/et_ck_dept"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dp"
+	            android:background="#00ffffff"
+	            android:paddingLeft="10dp"
+	            android:textSize="16sp" 
+	            android:enabled="false"
+	            />
+	    </LinearLayout>
+	    
+	     <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/login_input"
+	        android:orientation="horizontal" 
+	        android:layout_marginTop="2dp"
+	        >
+	
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="检查日期:"
+	            android:textSize="18sp"
+	            android:paddingLeft="10dp" 
+	            android:textColor="#2197db"
+	            />
+	
+            <EditText
+	            android:id="@+id/et_ck_time"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dp"
+	            android:background="#00ffffff"
+	            android:paddingLeft="10dp" 
+	            android:enabled="false"
+	            />
+            
+	    </LinearLayout>
+	    
+	    	    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:background="@drawable/login_input"
+		        android:orientation="horizontal" 
+		        android:layout_marginTop="2dp"
+		        >
+		
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="检查时间:"
+		            android:textSize="18sp"
+		            android:paddingLeft="10dp" 
+		            android:textColor="#2197db"
+		            />
+		        
+				<EditText
+		            android:id="@+id/et_ck_startime"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="40dp"
+		            android:background="#00ffffff"
+		            android:paddingLeft="10dp" 
+		            android:focusable="false"
+		            android:gravity="center"
+		            />
+				
+				<TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="至"
+		            android:textSize="18sp"
+		            android:textColor="#2197db"
+		            />
+		        
+				<EditText
+		            android:id="@+id/et_ck_endtime"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="40dp"
+		            android:background="#00ffffff"
+		            android:paddingLeft="10dp" 
+		            android:focusable="false"
+		            android:gravity="center"
+		            />
+	            
+		    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:background="@drawable/login_input"
+			android:layout_marginTop="3dp"
+	        android:orientation="horizontal" 
+	        >
+	
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="检查人员:"
+	            android:textSize="16sp"
+	            android:paddingLeft="10dp" 
+	            android:textColor="@color/light_blue"
+	            />
+	
+	        <EditText
+	            android:id="@+id/et_ck_people"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dp"
+	            android:background="#00ffffff"
+	            android:paddingLeft="10dp" 
+	            android:textSize="16sp"
+	            android:enabled="false"
+	            />
+	    </LinearLayout>
+	    
+	    <Button
+	        android:id="@+id/but_standcheck_item_show" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="详细信息"
+	        android:textSize="18sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	</LinearLayout>
+        
+</RelativeLayout>

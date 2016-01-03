@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+	        android:id="@+id/topbar_standcheck_add"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@drawable/login_bg"
+	        yk:titletext="企业对照标准排查"
+	        yk:titletextcolor="#ffffff"
+	        yk:titletextsize="18sp"
+	        yk:lefttext="返回"
+	        yk:lefttextcolor="#ffffff"
+	        yk:lefttextsize="12sp"
+	        yk:leftbackground="@drawable/top_left_button"
+	        yk:righttext="提交"
+	        yk:rightcolor="#ffffff"
+	        yk:rightsize="12sp"
+	        yk:rightbackground="@drawable/top_right_button"
+	        />
+     
+     <LinearLayout
+        android:id="@+id/lin_table_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/login_input"
+        android:orientation="horizontal" 
+        android:layout_below="@+id/topbar_standcheck_add"
+        android:visibility="gone"
+        >
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="表格名称:"
+            android:textSize="16sp"
+            android:paddingLeft="10dp" 
+            android:textColor="@color/light_blue"
+            />
+
+        <EditText
+            android:id="@+id/et_table_name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#00ffffff"
+            android:paddingLeft="10dp" 
+            android:hint="请输入表格名称"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+     
+      <ListView 
+	        android:id="@+id/list_standcheck_add"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@+id/lin_table_name"
+	        android:longClickable="true"  
+	        />
+      
+</RelativeLayout>

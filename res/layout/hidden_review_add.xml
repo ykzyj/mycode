@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+	        android:id="@+id/topbar_dailycheck_review_add"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@drawable/login_bg"
+	        yk:titletext="日常隐患检查复查信息添加"
+	        yk:titletextcolor="#ffffff"
+	        yk:titletextsize="18sp"
+	        yk:lefttext="返回"
+	        yk:lefttextcolor="#ffffff"
+	        yk:lefttextsize="12sp"
+	        yk:leftbackground="@drawable/top_left_button"
+	        yk:righttext="提交"
+	        yk:rightcolor="#ffffff"
+	        yk:rightsize="12sp"
+	        yk:rightbackground="@drawable/top_right_button"
+	        />
+    
+    	<ScrollView 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:scrollbars="vertical"
+		    android:layout_below="@+id/topbar_dailycheck_review_add"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    >
+    
+    		<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="#ffffff"
+			    android:orientation="vertical"
+			    android:focusable="true"   
+			    android:focusableInTouchMode="true"  
+			    >
+			    
+			    <RelativeLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="2dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_ck_reviewcondition"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="复查结果:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <ImageButton 
+			            android:id="@+id/img_max_ck_reviewcondition"
+			            android:layout_width="22dp"
+			            android:layout_height="22dp"
+			            android:layout_alignParentRight="true"
+			            android:src="@drawable/white_big_screen"
+			            android:background="@drawable/bg_blue14"
+			            android:layout_alignTop="@+id/tv_ck_reviewcondition"
+			            android:layout_marginRight="5dp"
+			            />
+			        
+			        <EditText
+				         android:id="@+id/et_ck_reviewcondition"
+				         android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:gravity="left|top"
+				         android:inputType="textMultiLine"
+						 android:minLines="8"
+						 android:textSize="14sp" 
+						 android:layout_below="@+id/tv_ck_reviewcondition"
+						 android:hint="请输入复查结果"
+				         />
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rel_ck_reviewopinion"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_ck_reviewopinion"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="复查意见:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <ImageButton 
+			            android:id="@+id/img_max_ck_reviewopinion"
+			            android:layout_width="22dp"
+			            android:layout_height="22dp"
+			            android:layout_alignParentRight="true"
+			            android:src="@drawable/white_big_screen"
+			            android:background="@drawable/bg_blue14"
+			            android:layout_alignTop="@+id/tv_ck_reviewopinion"
+			            android:layout_marginRight="5dp"
+			            />
+			
+			        <EditText
+				         android:id="@+id/et_ck_reviewopinion"
+				         android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:gravity="left|top"
+				         android:inputType="textMultiLine"
+						 android:minLines="8"
+						 android:textSize="14sp" 
+						 android:layout_below="@+id/tv_ck_reviewopinion"
+						 android:hint="请输入复查意见"
+				         />
+			    </RelativeLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="2dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="复查部门:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_reviewdepartment"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp"
+			            android:hint="请输入复查部门" 
+			            android:inputType="number"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="2dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="复查时间:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            />
+			
+			        <com.sunnyit.common.view.DateEditView 
+		                 android:id="@+id/et_ck_reviewtime"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入复查时间" 
+		                />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="2dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="复查人员:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_reviewprople"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp"
+			            android:hint="请输入复查人员" 
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="2dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="填表时间:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            />
+			
+			        <com.sunnyit.common.view.DateEditView 
+		                 android:id="@+id/et_ck_completereviewtabletime"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入填表时间"
+		                />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="2dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="填表人:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_completereviewtablepeople"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入填表人"
+			            />
+			    </LinearLayout>
+			
+			</LinearLayout>
+        
+        </ScrollView>
+        
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" 
+    android:focusable="true"   
+    android:focusableInTouchMode="true"  
+    >
+    
+     <com.sunnyit.common.view.TopBarView 
+        android:id="@+id/topbar_pwup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/login_bg"
+        yk:titletext="添加事件"
+        yk:titletextcolor="#ffffff"
+        yk:titletextsize="18sp"
+        yk:lefttext="返回"
+        yk:lefttextcolor="#ffffff"
+        yk:lefttextsize="12sp"
+        yk:leftbackground="@drawable/top_left_button"
+        yk:righttext="提交"
+        yk:rightcolor="#ffffff"
+        yk:rightsize="12sp"
+        yk:rightbackground="@drawable/top_right_button"
+        />
+    
+    <ScrollView 
+	    android:layout_width="match_parent" 
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/topbar_pwup"
+	    android:scrollbars="vertical"
+	    >
+		    
+	        <RelativeLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    >
+    
+			      <TextView
+			         android:id="@+id/tv_node_title"
+			         android:layout_width="fill_parent"
+			         android:layout_height="30dip"
+			         android:gravity="center_vertical"
+					 android:textSize="16sp" 
+					 android:text="@string/node_title"
+					 android:layout_marginLeft="15dip"
+			         />
+			     
+			       <EditText
+			         android:id="@+id/edit_node_title"
+			         android:layout_width="fill_parent"
+			         android:layout_height="wrap_content"
+			         android:layout_below="@id/tv_node_title"
+			         android:hint="@string/node_title_hint"
+					 android:gravity="center_vertical"
+					 android:textColor="@color/text_black"
+					 android:layout_marginLeft="10dp"
+					 android:layout_marginRight="10dp"
+					 android:textSize="14sp" 
+			         />
+			       
+			        <TextView
+			         android:id="@+id/tv_node_msg"
+			         android:layout_width="fill_parent"
+			         android:layout_height="30dip"
+			         android:gravity="center_vertical"
+			         android:layout_below="@id/edit_node_title"
+					 android:textSize="16sp" 
+					 android:text="@string/node_msg"
+					 android:layout_marginLeft="15dip"
+			         />
+			     
+			    
+			     <EditText
+			         android:id="@+id/edit_node_msg"
+			         android:layout_width="match_parent"
+			         android:layout_height="match_parent"
+			         android:layout_below="@id/tv_node_msg"
+			         android:hint="@string/node_msg_hint"
+			         android:inputType="textMultiLine"
+					 android:gravity="left|top"
+					 android:minLines="15"
+					 android:layout_marginLeft="10dp"
+					 android:layout_marginRight="10dp"
+					 android:textSize="14sp" 
+			         />
+			     
+			     <TextView
+			         android:id="@+id/tv_edit_count"
+			         android:layout_width="wrap_content"
+			         android:layout_height="20dip"
+			         android:layout_below="@id/edit_node_msg"
+			         android:gravity="center_vertical"
+					 android:textSize="12sp" 
+					 android:text="@string/fd_count"
+					 android:layout_alignParentRight="true"
+					 android:layout_marginRight="10dip"
+					 android:textColor="@color/text_black"
+			         />
+
+    	       </RelativeLayout>
+     </ScrollView>
+    
+</RelativeLayout>

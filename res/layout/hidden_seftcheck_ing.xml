@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+	        android:id="@+id/topbar_selfcheck_add"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@drawable/login_bg"
+	        yk:titletext="企业日常隐患排查添加"
+	        yk:titletextcolor="#ffffff"
+	        yk:titletextsize="18sp"
+	        yk:lefttext="返回"
+	        yk:lefttextcolor="#ffffff"
+	        yk:lefttextsize="12sp"
+	        yk:leftbackground="@drawable/top_left_button"
+	        yk:righttext="提交"
+	        yk:rightcolor="#ffffff"
+	        yk:rightsize="12sp"
+	        yk:rightbackground="@drawable/top_right_button"
+	        />
+    
+    	<ScrollView 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:scrollbars="vertical"
+		    android:layout_below="@+id/topbar_selfcheck_add"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    >
+    
+    		<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="#ffffff"
+			    android:orientation="vertical"
+			    android:focusable="true"   
+			    android:focusableInTouchMode="true"  
+			    >
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查编号:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/sc_id"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入检查编号"
+			            android:enabled="false"
+			            android:textSize="16sp"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查时间:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+		            <EditText
+		                 android:id="@+id/sc_checkTime"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入检查时间"
+			            android:textSize="16sp"
+			            android:enabled="false"
+		                />
+		            
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查部门:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/sc_checkingDepartment"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入检查部门"
+			            android:textSize="16sp"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查人员:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/sc_inspector"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入检查人员"
+			            android:textSize="16sp"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="被检查部门:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            />
+			
+			        <EditText
+			            android:id="@+id/sc_checkedDepartment"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入被检查部门"
+			            android:textSize="16sp"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="被检查岗位:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/sc_checkedJob"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp"
+			            android:hint="请输入被检查岗位" 
+			            android:textSize="16sp"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rel_sc_hiddenCondition"
+			        android:layout_width="match_parent"
+			        android:layout_height="220dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_sc_hiddenCondition"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="企业自查情况:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <ImageButton 
+			            android:id="@+id/img_sc_hiddenCondition"
+			            android:layout_width="22dp"
+			            android:layout_height="22dp"
+			            android:layout_alignParentRight="true"
+			            android:src="@drawable/system_add"
+			            android:background="@drawable/bg_blue14"
+			            android:layout_alignTop="@+id/tv_sc_hiddenCondition"
+			            android:layout_marginRight="5dp"
+			            />
+			        
+			       	<WebView 
+			       	    android:id="@+id/sc_hiddenCondition"
+				         android:layout_width="match_parent"
+				         android:layout_height="180dp"
+				         android:layout_marginLeft="10dp"
+				         android:layout_marginRight="10dp"
+				         android:layout_below="@+id/tv_sc_hiddenCondition"
+				         android:enabled="false"
+			       	    />
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rel_sc_fixMeasure"
+			        android:layout_width="match_parent"
+			        android:layout_height="220dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_sc_fixMeasure"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="整改措施:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <ImageButton 
+			            android:id="@+id/img_sc_fixMeasure"
+			            android:layout_width="22dp"
+			            android:layout_height="22dp"
+			            android:layout_alignParentRight="true"
+			            android:src="@drawable/system_add"
+			            android:background="@drawable/bg_blue14"
+			            android:layout_alignTop="@+id/tv_sc_fixMeasure"
+			            android:layout_marginRight="5dp"
+			            />
+			
+			        <WebView 
+			       	    android:id="@+id/sc_fixMeasure"
+				         android:layout_width="match_parent"
+				         android:layout_height="180dp"
+				         android:layout_marginLeft="10dp"
+				         android:layout_marginRight="10dp"
+				         android:layout_below="@+id/tv_sc_fixMeasure"
+				         android:enabled="false"
+			       	    />
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rel_sc_superviseOpinion"
+			        android:layout_width="match_parent"
+			        android:layout_height="220dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        android:visibility="gone"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_sc_superviseOpinion"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="整改措施:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <WebView 
+			       	    android:id="@+id/sc_sc_superviseOpinion"
+				         android:layout_width="match_parent"
+				         android:layout_height="180dp"
+				         android:layout_marginLeft="10dp"
+				         android:layout_marginRight="10dp"
+				         android:layout_below="@+id/tv_sc_superviseOpinion"
+				         android:enabled="false"
+			       	    />
+			    </RelativeLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_sc_startTime"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        android:visibility="gone"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="整治开始时间:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText 
+		                 android:id="@+id/sc_startTime"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入整治开始时间"
+			            android:textSize="16sp"
+			            android:enabled="false"
+		                />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_sc_deadline"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        android:visibility="gone"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="整治结束时间:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			        
+			        <EditText 
+		                 android:id="@+id/sc_deadline"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入整治结束时间"
+			            android:textSize="16sp"
+			            android:enabled="false"
+		                />
+			    </LinearLayout>
+			    
+			     <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="填表时间:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/sc_completeTableTime"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入填表时间"
+			            android:textSize="16sp"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="填表人:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/sc_completeTablePeople"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入填表人"
+			            android:textSize="16sp"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			     <RelativeLayout
+			        android:id="@+id/rel_sco_fixresult"
+			        android:layout_width="match_parent"
+			        android:layout_height="220dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_sco_fixresult"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="整改结果:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <ImageButton 
+			            android:id="@+id/img_sco_fixresult"
+			            android:layout_width="22dp"
+			            android:layout_height="22dp"
+			            android:layout_alignParentRight="true"
+			            android:src="@drawable/system_add"
+			            android:background="@drawable/bg_blue14"
+			            android:layout_alignTop="@+id/tv_sco_fixresult"
+			            android:layout_marginRight="5dp"
+			            />
+			
+			        <WebView 
+			       	    android:id="@+id/sco_fixresult"
+				         android:layout_width="match_parent"
+				         android:layout_height="180dp"
+				         android:layout_marginLeft="10dp"
+				         android:layout_marginRight="10dp"
+				         android:layout_below="@+id/tv_sco_fixresult"
+				         android:enabled="false"
+			       	    />
+			    </RelativeLayout>
+			    
+			     
+			      <RelativeLayout
+			        android:id="@+id/rel_sco_acceptopinion"
+			        android:layout_width="match_parent"
+			        android:layout_height="220dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_sco_acceptopinion"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="验收意见:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <ImageButton 
+			            android:id="@+id/img_sco_acceptopinion"
+			            android:layout_width="22dp"
+			            android:layout_height="22dp"
+			            android:layout_alignParentRight="true"
+			            android:src="@drawable/system_add"
+			            android:background="@drawable/bg_blue14"
+			            android:layout_alignTop="@+id/tv_sco_acceptopinion"
+			            android:layout_marginRight="5dp"
+			            />
+			
+			        <WebView 
+			       	    android:id="@+id/sco_acceptopinion"
+				         android:layout_width="match_parent"
+				         android:layout_height="180dp"
+				         android:layout_marginLeft="10dp"
+				         android:layout_marginRight="10dp"
+				         android:layout_below="@+id/tv_sco_acceptopinion"
+				         android:enabled="false"
+			       	    />
+			    </RelativeLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_sco_acceptanceDepartment"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="验收部门:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/sco_acceptanceDepartment"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入验收部门"
+			            android:textSize="16sp"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_sco_acceptanceTime"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="验收时间:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/sco_acceptanceTime"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入验收时间"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_sco_completeTablePeople"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="验收填表人:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/sco_completeTablePeople"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入验收填表人"
+			            android:textSize="16sp"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_sco_completeTableTime"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="验收填表时间:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/sco_completeTableTime"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:hint="请输入验收填表时间"
+			            android:textSize="16sp"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			</LinearLayout>
+        
+        </ScrollView>
+        
+</RelativeLayout>

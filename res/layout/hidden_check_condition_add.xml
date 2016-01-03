@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+	        android:id="@+id/topbar_check_condition_add"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@drawable/login_bg"
+	        yk:titletext="现场检查情况"
+	        yk:titletextcolor="#ffffff"
+	        yk:titletextsize="18sp"
+	        yk:lefttext="返回"
+	        yk:lefttextcolor="#ffffff"
+	        yk:lefttextsize="12sp"
+	        yk:leftbackground="@drawable/top_left_button"
+	        yk:righttext="提交"
+	        yk:rightcolor="#ffffff"
+	        yk:rightsize="12sp"
+	        yk:rightbackground="@drawable/top_right_button"
+	        />
+    
+    	<ScrollView 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:scrollbars="vertical"
+		    android:layout_below="@+id/topbar_check_condition_add"
+		    android:layout_marginTop="2dp"
+		    android:layout_marginBottom="5dp"
+		    >
+    
+    		<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="#ffffff"
+			    android:orientation="vertical"
+			    android:focusable="true"   
+			    android:focusableInTouchMode="true"  
+			    >
+			    
+    		    <LinearLayout 
+    		        android:id="@+id/lin_check_condition_add"
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:orientation="vertical"
+    		        >
+    		       <!--  <com.sunnyit.common.view.CustomInputView 
+				       android:layout_width="match_parent"
+				       android:layout_height="wrap_content"
+				       yk:input_title="第一项："
+				       yk:input_fimg_src="@drawable/img_up"
+				       yk:input_simg_src="@drawable/delete_imgbut48"
+				       yk:input_hint="请输入检查情况"
+				       /> -->
+    		    </LinearLayout>
+			    
+    		    <Button 
+    		        android:id="@+id/but_add_inputview"
+    		        android:layout_width="match_parent"
+    		        android:layout_height="50dp"
+    		        android:background="@drawable/login_but_selector"
+    		        android:layout_marginLeft="5dp"
+				    android:layout_marginRight="5dp"
+				    android:text="添加"
+				    android:textSize="16sp"
+				    android:textColor="#ffffff"
+    		        />
+    		    
+			</LinearLayout>
+        
+        </ScrollView>
+        
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wlogin_bg"
+    android:orientation="vertical" >
+
+  	<LinearLayout
+        android:id="@+id/system_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        >
+        
+  	    <ImageView 
+  	        android:layout_width="70dp"
+  	        android:layout_height="70dp"
+  	        android:src="@drawable/aj_logo"
+  	        android:layout_gravity="center_horizontal"
+  	        />
+
+        <TextView
+            android:id="@+id/system_name01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/systemname"
+            android:textColor="#ffffff"
+            android:textSize="20sp" 
+            android:layout_marginTop="10dp"
+            />
+        
+    </LinearLayout>    
+    
+    
+     <LinearLayout
+         android:id="@+id/linearLayout01"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" 
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:layout_marginTop="60.0px"
+         >  
+       
+     </LinearLayout>
+     
+       <TextView
+           android:id="@+id/start_content1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/start_content2"
+           android:layout_marginBottom="5dip"
+           android:text="@string/company_name"
+           android:textColor="#ffffff"
+           android:textSize="13sp" 
+           android:layout_centerHorizontal="true"
+           />
+         <TextView
+           android:id="@+id/start_content2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/company_webUrl"
+           android:textColor="#ffffff"
+           android:textSize="13sp" 
+           android:layout_centerHorizontal="true"
+           android:layout_alignParentBottom="true"
+           android:layout_marginBottom="50dip"
+           />
+
+</RelativeLayout>

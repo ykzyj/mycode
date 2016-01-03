@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+	        android:id="@+id/topbar_dailycheck_show"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@drawable/login_bg"
+	        yk:titletext="日常隐患检查信息"
+	        yk:titletextcolor="#ffffff"
+	        yk:titletextsize="19sp"
+	        yk:lefttext="返回"
+	        yk:lefttextcolor="#ffffff"
+	        yk:lefttextsize="12sp"
+	        yk:leftbackground="@drawable/top_left_button"
+	        />
+    
+    	<ScrollView 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:scrollbars="vertical"
+		    android:layout_below="@+id/topbar_dailycheck_show"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    >
+    
+    		<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="#ffffff"
+			    android:orientation="vertical"
+			    android:focusable="true"   
+			    android:focusableInTouchMode="true"  
+			    >
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="2dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查时间:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+		            <EditText
+		                 android:id="@+id/et_ck_time"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+		                />
+		            
+			    </LinearLayout>
+			    
+   			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="2dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查时间:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            />
+			        
+					<EditText
+			            android:id="@+id/et_ck_startime"
+			            android:layout_width="0dp"
+			            android:layout_weight="1"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:focusable="false"
+			            android:gravity="center"
+			            />
+					
+					<TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="至"
+			            android:textSize="18sp"
+			            android:textColor="#2197db"
+			            />
+			        
+					<EditText
+			            android:id="@+id/et_ck_endtime"
+			            android:layout_width="0dp"
+			            android:layout_weight="1"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:focusable="false"
+			            android:gravity="center"
+			            />
+		            
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查部门:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_checkingdepartment"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="被检查企业:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_checkeddepartment"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查场所:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_checkPlace"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="企业现场负责人:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_sceneresponsible"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="职务:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_position"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="联系电话:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_telephone"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp"
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <RelativeLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_ck_scenecondition"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="现场检查情况:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <ImageButton 
+			            android:id="@+id/img_max_ck_scenecondition"
+			            android:layout_width="22dp"
+			            android:layout_height="22dp"
+			            android:layout_alignParentRight="true"
+			            android:src="@drawable/white_big_screen"
+			            android:background="@drawable/bg_blue14"
+			            android:layout_alignTop="@+id/tv_ck_scenecondition"
+			            android:layout_marginRight="5dp"
+			            />
+			        
+			        <EditText
+				         android:id="@+id/et_ck_scenecondition"
+				         android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:gravity="left|top"
+				         android:inputType="textMultiLine"
+						 android:minLines="8"
+						 android:textSize="14sp" 
+						 android:layout_below="@+id/tv_ck_scenecondition"
+						 android:enabled="false"
+				         />
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rel_ck_fixnowing"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="2dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_ck_fixnowing"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="立即整改:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <ImageButton 
+			            android:id="@+id/img_max_ck_fixnowing"
+			            android:layout_width="22dp"
+			            android:layout_height="22dp"
+			            android:layout_alignParentRight="true"
+			            android:src="@drawable/white_big_screen"
+			            android:background="@drawable/bg_blue14"
+			            android:layout_alignTop="@+id/tv_ck_fixnowing"
+			            android:layout_marginRight="5dp"
+			            />
+			
+			        <EditText
+				         android:id="@+id/et_ck_fixnowing"
+				         android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:gravity="left|top"
+				         android:inputType="textMultiLine"
+						 android:minLines="8"
+						 android:textSize="14sp" 
+						 android:layout_below="@+id/tv_ck_fixnowing"
+						 android:enabled="false"
+				         />
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rel_ck_fixdeadline"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_ck_fixdeadline"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="限期整改:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <ImageButton 
+			            android:id="@+id/img_max_ck_fixdeadline"
+			            android:layout_width="22dp"
+			            android:layout_height="22dp"
+			            android:layout_alignParentRight="true"
+			            android:src="@drawable/white_big_screen"
+			            android:background="@drawable/bg_blue14"
+			            android:layout_alignTop="@+id/tv_ck_fixdeadline"
+			            android:layout_marginRight="5dp"
+			            />
+			
+			        <EditText
+				         android:id="@+id/et_ck_fixdeadline"
+				         android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:gravity="left|top"
+				         android:inputType="textMultiLine"
+						 android:minLines="8"
+						 android:textSize="14sp" 
+						 android:layout_below="@+id/tv_ck_fixdeadline"
+						 android:enabled="false"
+				         />
+			    </RelativeLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_ck_fixstart_time"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="整改开始时间:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+		                 android:id="@+id/et_ck_fixstart_time"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+		                />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_ck_fixend_time"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="整改结束时间:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+		                 android:id="@+id/et_ck_fixend_time"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+		                />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查人员:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_checkpeople"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="填表时间:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+		                 android:id="@+id/et_ck_completechecktabletime"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+		                />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="填表人:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_completechecktablepeople"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rel_ck_fixMeasure"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_ck_fixMeasure"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="整改措施:"
+			            android:textSize="16sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="@color/light_blue"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <ImageButton 
+			            android:id="@+id/img_max_ck_fixMeasure"
+			            android:layout_width="22dp"
+			            android:layout_height="22dp"
+			            android:layout_alignParentRight="true"
+			            android:src="@drawable/white_big_screen"
+			            android:background="@drawable/bg_blue14"
+			            android:layout_alignTop="@+id/tv_ck_fixMeasure"
+			            android:layout_marginRight="5dp"
+			            />
+			
+			        <EditText
+				         android:id="@+id/et_ck_fixMeasure"
+				         android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:gravity="left|top"
+				         android:inputType="textMultiLine"
+						 android:minLines="8"
+						 android:textSize="14sp" 
+						 android:layout_below="@+id/tv_ck_fixMeasure"
+						 android:enabled="false"
+				         />
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rel_ck_fixCondition"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_ck_fixCondition"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="整改结果:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <ImageButton 
+			            android:id="@+id/img_max_ck_fixCondition"
+			            android:layout_width="22dp"
+			            android:layout_height="22dp"
+			            android:layout_alignParentRight="true"
+			            android:src="@drawable/white_big_screen"
+			            android:background="@drawable/bg_blue14"
+			            android:layout_alignTop="@+id/tv_ck_fixCondition"
+			            android:layout_marginRight="5dp"
+			            />
+			
+			        <EditText
+				         android:id="@+id/et_ck_fixCondition"
+				         android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:gravity="left|top"
+				         android:inputType="textMultiLine"
+						 android:minLines="8"
+						 android:textSize="15sp" 
+						 android:layout_below="@+id/tv_ck_fixCondition"
+						 android:enabled="false"
+				         />
+			    </RelativeLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_ck_acceptopinion"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="验收意见:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_acceptopinion"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_ck_acceptanceDept"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="验收部门:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_acceptanceDept"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_ck_acceptanceTime"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="验收时间:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_acceptanceTime"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rel_ck_reviewcondition"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_ck_reviewcondition"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="现场复查情况:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <ImageButton 
+			            android:id="@+id/img_max_ck_reviewcondition"
+			            android:layout_width="22dp"
+			            android:layout_height="22dp"
+			            android:layout_alignParentRight="true"
+			            android:src="@drawable/white_big_screen"
+			            android:background="@drawable/bg_blue14"
+			            android:layout_alignTop="@+id/tv_ck_reviewcondition"
+			            android:layout_marginRight="5dp"
+			            />
+			
+			        <EditText
+				         android:id="@+id/et_ck_reviewcondition"
+				         android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:gravity="left|top"
+				         android:inputType="textMultiLine"
+						 android:minLines="8"
+						 android:textSize="15sp" 
+						 android:layout_below="@+id/tv_ck_reviewcondition"
+						 android:enabled="false"
+				         />
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rel_ck_reviewopinion"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:id="@+id/tv_ck_reviewopinion"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="复查意见:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            android:layout_marginTop="5dp"
+			            />
+			        
+			        <ImageButton 
+			            android:id="@+id/img_max_ck_reviewopinion"
+			            android:layout_width="22dp"
+			            android:layout_height="22dp"
+			            android:layout_alignParentRight="true"
+			            android:src="@drawable/white_big_screen"
+			            android:background="@drawable/bg_blue14"
+			            android:layout_alignTop="@+id/tv_ck_reviewopinion"
+			            android:layout_marginRight="5dp"
+			            />
+			
+			        <EditText
+				         android:id="@+id/et_ck_reviewopinion"
+				         android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:gravity="left|top"
+				         android:inputType="textMultiLine"
+						 android:minLines="8"
+						 android:textSize="15sp" 
+						 android:layout_below="@+id/tv_ck_reviewopinion"
+						 android:enabled="false"
+				         />
+			    </RelativeLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_ck_reviewdepartment"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="复查部门:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_reviewdepartment"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_ck_reviewtime"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="复查时间:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_reviewtime"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/lin_ck_reviewprople"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@drawable/login_input"
+			        android:orientation="horizontal" 
+			        android:layout_marginTop="3dp"
+			        >
+			
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="复查人员:"
+			            android:textSize="18sp"
+			            android:paddingLeft="10dp" 
+			            android:textColor="#2197db"
+			            />
+			
+			        <EditText
+			            android:id="@+id/et_ck_reviewprople"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dp"
+			            android:background="#00ffffff"
+			            android:paddingLeft="10dp" 
+			            android:enabled="false"
+			            />
+			    </LinearLayout>
+			    
+			</LinearLayout>
+        
+        </ScrollView>
+        
+</RelativeLayout>

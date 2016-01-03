@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" 
+    >
+    
+    <com.sunnyit.common.view.TopBarView 
+        android:id="@+id/topbar_pwup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/login_bg"
+        yk:titletext="系统帮助"
+        yk:titletextcolor="#ffffff"
+        yk:titletextsize="18sp"
+        yk:lefttext="返回"
+        yk:lefttextcolor="#ffffff"
+        yk:lefttextsize="12sp"
+        yk:leftbackground="@drawable/top_left_button"
+        />
+    
+        <LinearLayout
+	        android:id="@+id/place_linear"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical" 
+	        android:layout_below="@id/topbar_pwup"
+	        >
+
+	        <RelativeLayout
+	            android:id="@+id/relative_new_user"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/relativelayout_bg" 
+	            android:clickable="true"
+	            >
+	
+	            <ImageView        
+			        android:id="@+id/help_new_user"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_marginLeft="8dip" 
+			        android:src="@drawable/new_user"
+			        >
+			    </ImageView>
+			
+			    <TextView
+			        android:id="@+id/group"
+			        android:layout_width="wrap_content"
+			        android:layout_height="40dip"
+			        android:textSize="16sp" 
+			        android:text="新手帮助"
+			        android:layout_toRightOf="@id/help_new_user"
+			        android:gravity="center_vertical"
+			        android:layout_centerVertical="true"
+			        android:textColor="@color/grey"
+			        android:layout_marginLeft="6dp"
+			        >
+			    </TextView>
+			
+			    <ImageView        
+			        android:id="@+id/tubiao"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_marginRight="8dip" 
+			        android:src="@drawable/mm_submenu_normal"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        />
+	
+	        </RelativeLayout>
+	
+	        <RelativeLayout
+	            android:id="@+id/relative_question"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/relativelayout_bg" 
+	            android:clickable="true"
+	            >
+	
+	           <ImageView        
+			        android:id="@+id/help_new_question"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_marginLeft="8dip" 
+			        android:src="@drawable/often_question"
+			        >
+			    </ImageView>
+			
+			    <TextView
+			        android:id="@+id/group02"
+			        android:layout_width="wrap_content"
+			        android:layout_height="40dip"
+			        android:textSize="16sp" 
+			        android:text="常见问题"
+			        android:layout_toRightOf="@id/help_new_question"
+			        android:gravity="center_vertical"
+			        android:layout_centerVertical="true"
+			        android:textColor="@color/grey"
+			        android:layout_marginLeft="6dp"
+			        >
+			    </TextView>
+			
+			     <ImageView        
+			        android:id="@+id/tubiao02"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_marginRight="8dip" 
+			        android:src="@drawable/mm_submenu_normal"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        />
+	        </RelativeLayout>
+	
+	        <RelativeLayout
+	            android:id="@+id/relative_user_return"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/relativelayout_bg" 
+	            android:clickable="true"
+	            >
+	
+	            <ImageView        
+			        android:id="@+id/help_user_return"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_marginLeft="8dip" 
+			        android:src="@drawable/user_feedback"
+			        >
+			    </ImageView>
+			
+			    <TextView
+			        android:id="@+id/group03"
+			        android:layout_width="wrap_content"
+			        android:layout_height="40dip"
+			        android:textSize="16sp" 
+			        android:text="用户反馈"
+			        android:layout_toRightOf="@id/help_user_return"
+			        android:gravity="center_vertical"
+			        android:layout_centerVertical="true"
+			        android:textColor="@color/grey"
+			        android:layout_marginLeft="6dp"
+			        >
+			    </TextView>
+			
+			    <ImageView        
+			        android:id="@+id/tubiao03"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_marginRight="8dip" 
+			        android:src="@drawable/mm_submenu_normal"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        />
+	        </RelativeLayout>
+	        
+	        <RelativeLayout
+	            android:id="@+id/relative_technical_support"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/relativelayout_bg" 
+	            android:clickable="true"
+	            >
+	
+	            <ImageView        
+			        android:id="@+id/help_technical_support"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_marginLeft="8dip" 
+			        android:src="@drawable/technical_support"
+			        >
+			    </ImageView>
+			
+			    <TextView
+			        android:id="@+id/tv_technical_support"
+			        android:layout_width="wrap_content"
+			        android:layout_height="40dip"
+			        android:textSize="16sp" 
+			        android:text="技术支持"
+			        android:layout_toRightOf="@id/help_technical_support"
+			        android:gravity="center_vertical"
+			        android:layout_centerVertical="true"
+			        android:textColor="@color/grey"
+			        android:layout_marginLeft="6dp"
+			        >
+			    </TextView>
+			
+			    <ImageView        
+			        android:id="@+id/img_technical_support_r"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_marginRight="8dip" 
+			        android:src="@drawable/mm_submenu_normal"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        />
+	        </RelativeLayout>
+    </LinearLayout>
+    
+    
+</RelativeLayout>

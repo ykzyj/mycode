@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <com.sunnyit.common.view.TopBarView 
+	        android:id="@+id/topbar_file_tf"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@drawable/login_bg"
+	        yk:titletext="文件传输"
+	        yk:titletextcolor="#ffffff"
+	        yk:titletextsize="18sp"
+	        yk:lefttext="返回"
+	        yk:lefttextcolor="#ffffff"
+	        yk:lefttextsize="12sp"
+	        yk:leftbackground="@drawable/top_left_button"
+	        />
+    
+     <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 
+	    android:gravity="center"
+	    android:layout_below="@+id/topbar_endatil_standcheck_add"
+	    >
+	    
+	    <Button
+	        android:id="@+id/but_tf_send" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="文件发送"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:textSize="16sp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_tf_havesend" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="已发送"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:textSize="16sp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_tf_waitreceive" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="待接收"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:textSize="16sp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_tf_havereceive" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="已接收"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:textSize="16sp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+	    <Button
+	        android:id="@+id/but_tf_receivehistory" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="60dp"
+	        android:text="收发历史"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:textSize="16sp"
+	        android:background="@drawable/but_rect_blue"
+	        />
+	    
+</LinearLayout>
+        
+</RelativeLayout>

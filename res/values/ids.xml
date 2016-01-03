@@ -1,0 +1,7 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <item name="tag_image_path" type="id"/>
+    <item name="tag_image_position" type="id"></item>
+
+</resources>

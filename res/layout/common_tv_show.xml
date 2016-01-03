@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yk="http://schemas.android.com/apk/res/com.sunnyit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" 
+    >
+	    
+     <com.sunnyit.common.view.TopBarView 
+        android:id="@+id/topbar_common_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/login_bg"
+        yk:titletext="信息添加"
+        yk:titletextcolor="#ffffff"
+        yk:titletextsize="18sp"
+        yk:lefttext="返回"
+        yk:lefttextcolor="#ffffff"
+        yk:lefttextsize="12sp"
+        yk:leftbackground="@drawable/top_left_button"
+        yk:righttext="确认"
+        yk:rightcolor="#ffffff"
+        yk:rightsize="12sp"
+        yk:rightbackground="@drawable/top_right_button"
+        />
+     
+     <EditText
+         android:id="@+id/et_common"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:gravity="left|top"
+         android:inputType="textMultiLine"
+		 android:textSize="15sp" 
+		 android:layout_below="@+id/topbar_common_tv"
+         />
+	    
+</RelativeLayout>
